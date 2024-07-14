@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/review.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Обзоры</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top--wrp">
+                    <nav class="header__top-links">
+                        <a href="../pages/about-company.html" class="header__top-item">О компании</a>
+                        <a href="../pages/payment.html" class="header__top-item">Оплата</a>
+                        <a href="../pages/delivery.html" class="header__top-item">Доставка</a>
+                        <a href="../pages/refund.html" class="header__top-item">Возрат </a>
+                        <a href="../pages/reviews.html" class="header__top-item">Отзывы</a>
+                        <a href="../pages/question.html" class="header__top-item"
+                            >Вопрос-ответ</a
+                        >
+                        <a href="../pages/blog.html" class="header__top-item">Новости</a>
+                        <a href="../pages/contacts.html" class="header__top-item">Контакты</a>
+                    </nav>
+                    <div class="header__top-about">
+                        <p class="header__top-about-schedule">
+                            Ежедневно, с 8:00 до 18:00
+                        </p>
+                        <p class="header__top-about-number">
+                            8 800 444 00 65
+                        </p>
+                        <a href="../pages/making-an-order.html" class="header__top-about-button btn"
+                            >ЗАКАЗАТЬ ЗВОНОК</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header--wrapper">
+                    <div class="logo">
+                        <a href="../index.html"
+                            ><img src="../img/icons/logo.svg" alt="logo"
+                        /></a>
+                    </div>
+                    <a href="../pages/products-catalog.html" class="header__bottom-catalog-btn"
+                        ><img
+                            src="../img/icons/Parallel.svg"
+                            alt="parallel"
+                        />КАТАЛОГ</a
+                    >
+                    <div class="search">
+                        <form action="../pages/search-results.html" method="get" class="search__form">
+                            <input
+                                name="s"
+                                placeholder="Найти среди 50000 товаров. Например: Дрель Bosch"
+                                type="search"
+                                class="search__input"
+                            />
+                            <button type="submit" class="search__button">
+                                <img
+                                    src="../img/icons/search.svg"
+                                    alt="search"
+                                />
+                            </button>
+                        </form>
+                    </div>
+
+                    <nav class="header__bottom-links">
+                        <a href="../pages/actions.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/gift.svg"
+                                    alt="gift" /></span
+                            >Все акции</a
+                        >
+                        <a href="../pages/personal-account.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/login.svg"
+                                    alt="gift" /></span
+                            >Войти</a
+                        >
+                        <a href="../pages/comparisons.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/Comparison.svg"
+                                    alt="gift" /></span
+                            >Сравнение</a
+                        >
+                        <a href="../pages/favourite.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/heart.svg"
+                                    alt="gift" /></span
+                            >Избранное</a
+                        >
+                        <a href="../pages/cart.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/cart.svg"
+                                    alt="gift" /></span
+                            >Корзина</a
+                        >
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="header__adaptive">
+        <div class="container">
+            <div class="header__adaptive-top">
+                <div class="menu">
+                    <input
+                        type="checkbox"
+                        id="burger-checkbox"
+                        class="burger-checkbox"
+                    />
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li><a href="../pages/about-company.html" class="menu-item">О КОМПАНИИ</a></li>
+                        <li></li>
+                        <li><a href="../pages/payment.html" class="menu-item">ОПЛАТА</a></li>
+                        <li></li>
+                        <li><a href="../pages/delivery.html" class="menu-item">ДОСТАВКА</a></li>
+                        <li></li>
+                        <li><a href="../pages/refund.html" class="menu-item">ВОЗРАТ</a></li>
+                        <li></li>
+                        <li><a href="../pages/reviews.html" class="menu-item">ОТЗЫВЫ</a></li>
+                        <li></li>
+                        <li><a href="../pages/question.html" class="menu-item">ВОПРОС-ОТВЕТ</a></li>
+                        <li></li>
+                        <li><a href="../pages/blog.html" class="menu-item">НОВОСТИ</a></li>
+                        <li></li>
+                        <li><a href="../pages/contacts.html" class="menu-item">КОНТАКТЫ</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="header__adaptive-top-about">
+                    <p
+                        class="header__adaptive-top-about-schedule header--hide"
+                    >
+                        Ежедневно, с 8:00 до 18:00
+                    </p>
+                    <p class="header__adaptive-top-about-number">
+                        8 800 444 00 65
+                    </p>
+                    <a href="../pages/search-results.html" class="header__adaptive-top-about-button"
+                        >ЗАКАЗАТЬ ЗВОНОК</a
+                    >
+                </div>
+            </div>
+            <div class="header__adaptive-middle">
+                <div class="logo">
+                    <a href="../index.html"
+                        ><img src="../img/icons/logo.svg" alt=""
+                    /></a>
+                </div>
+                <nav class="header__adaptive-middle-links">
+                    <a href="../pages/actions.html" class="header__adaptive-middle-item">
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/gift.svg"
+                                alt="gift" /></span
+                        ><span class="header--hide">Все акции</span>
+                    </a>
+                    <a href="../pages/personal-account.html" class="header__adaptive-middle-item">
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/login.svg"
+                                alt="gift" /></span
+                        ><span class="header--hide">Войти</span>
+                    </a>
+                    <a href="../pages/comparisons.html" class="header__adaptive-middle-item">
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/Comparison.svg"
+                                alt="gift" /></span
+                        ><span class="header--hide">Сравнение</span>
+                    </a>
+                    <a href="../pages/favourite.html" class="header__adaptive-middle-item">
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/heart.svg"
+                                alt="gift" /></span
+                        ><span class="header--hide">Избранное</span>
+                    </a>
+                    <a
+                        href="../pages/cart.html"
+                        class="header__adaptive-middle-item header--hide"
+                    >
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/cart.svg"
+                                alt="gift" /></span
+                        >Корзина
+                    </a>
+                </nav>
+            </div>
+
+            <div class="header__adaptive-bottom">
+                <a href="../pages/products-catalog.html" class="header__adaptive-bottom-catalog-btn"
+                    ><img
+                        src="../img/icons/Parallel.svg"
+                        alt="parallel"
+                    />КАТАЛОГ</a
+                >
+
+                <div class="search">
+                    <form action="../pages/search-results.html" method="get" class="search__form">
+                        <input
+                            name="s"
+                            placeholder="Найти среди 50000 товаров. Например: Дрель Bosch"
+                            type="search"
+                            class="search__input"
+                        />
+                        <button type="submit" class="search__button">
+                            <img
+                                src="../img/icons/search.svg"
+                                alt="search"
+                            />
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="review-section">
+                <div class="review-pages-line">
+                    <div class="review-page-wrap">
+                        <a href="" class="review-page">Стройоптторг</a>
+                    </div>
+
+                    <p class="page-rush">/</p>
+
+                    <div class="review-page-wrap">
+                        <a href="" class="review-this-page">Отзывы</a>
+                    </div>
+                </div>
+                <div class="review-main-title-wrap">
+                    <h1 class="review-main-title">Отзывы</h1>
+                </div>
+                <div class="review-general-block">
+                    <div class="review-comments-block">
+                        <div class="review-new-buttons">
+                            <div class="review-button-wrap">
+                                <a href="" class="new-btn">Сначала новые</a>
+                            </div>
+                            <div class="review-button-wrap">
+                                <a href="" class="old-btn">Сначала старые</a>
+                            </div>
+                        </div>
+                        <div class="review-comms-line">
+                            <h2 class="comms-title">Оксана Гончарова</h2>
+                            <p class="comms-date">2.01.2022</p>
+                            <p class="comms-text">Просто ШИКАРНЕЙШИЙ магазин! Огромный ассортимент, демократичные цены, большая парковка, персонал-высшей квалификации от работников склада до руководства! Надёжный, ответственный и порядочный партнёр</p>
+                        </div>
+                        <div class="review-comms-line">
+                            <h2 class="comms-title">Шерифат Акбаева </h2>
+                            <p class="comms-date">2.01.2022</p>
+                            <p class="comms-text">Была не раз, рекомендую</p>
+                        </div>
+                        <div class="review-comms-line">
+                            <h2 class="comms-title">MindClick</h2>
+                            <p class="comms-date">16.06.2022</p>
+                            <p class="comms-text">Всегда всё нахожу здесь. Ассортимент большой. Удобно расположен. Есть доставка. Есть система скидок по карте. Есть грузчики, которые всегда помогут всё погрузить.</p>
+                        </div>
+                        <div class="review-comms-line">
+                            <h2 class="comms-title">Василий</h2>
+                            <p class="comms-date">16.06.2022</p>
+                            <p class="comms-text">Очень рад, что наткнулся на этот интернет-магазин строительных материалов! У них огромный выбор товаров, и цены приемлемые. Заказывал здесь материалы для ремонта в доме, и доставка была быстрой и без каких-либо проблем. К тому же, клиентская поддержка отвечает оперативно на все вопросы. Определенно буду советовать этот магазин друзьям и снова воспользуюсь его услугами.</p>
+                            <div class="comms-img-wrap">
+                                <img src="../img/images/Reviews/Reviews-1.png" alt="" class="comms-img">
+                                <img src="../img/images/Reviews/Reviews-2.png" alt="" class="comms-img">
+                            </div>
+                        </div>
+                        <div class="review-comms-line">
+                            <h2 class="comms-title">Марина</h2>
+                            <p class="comms-date">21.10.2022</p>
+                            <p class="comms-text">Большой выбор товаров, вежливый персонал, доступный ценовой сегмент на стройматериалы, удобное месторасположение, парковка.</p>
+                        </div>
+                        <div class="review-comms-line">
+                            <h2 class="comms-title">Иван</h2>
+                            <p class="comms-date">16.06.2022</p>
+                            <p class="comms-text">Как профессиональный строитель, я всегда ищу надежные поставщики строительных материалов, и этот магазин – один из них. Здесь есть всё, что нужно для стройки: от кирпичей и цемента до сантехники и электроинструментов. Качество товаров всегда на высоте, и цены конкурентоспособные. Доставка всегда приходит вовремя, что важно для меня и моих клиентов. С уверенностью рекомендую этот магазин всем, кто занимается строительством.</p>
+                            <div class="comms-img-wrap">
+                                <img src="../img/images/Reviews/Reviews-3.png" alt="" class="comms-img">
+                                <img src="../img/images/Reviews/Reviews-4.png" alt="" class="comms-img">
+                                <img src="../img/images/Reviews/Reviews-5.png" alt="" class="comms-img">
+                            </div>
+                        </div>
+                        <div class="review-comms-line">
+                            <h2 class="comms-title">Евгений</h2>
+                            <p class="comms-date">14.06.2022</p>
+                            <p class="comms-text">Мой опыт работы с интернет-магазином строительных материалов был удивительным. Они предлагают не только широкий выбор стандартных стройматериалов, но и креативные решения для дизайна интерьера. Я нашел здесь уникальные отделочные материалы, которые сделали мои проекты уникальными. Оформление заказа простое, и доставка была очень быстрой. Этот магазин действительно помог мне воплотить свои дизайнерские идеи в жизнь.</p>
+                        </div>
+                        <div class="review-comms-line">
+                            <h2 class="comms-title">Евгений</h2>
+                            <p class="comms-date">14.06.2022</p>
+                            <p class="comms-text">Для меня, как начинающего строителя, важно иметь доступ к надежным поставкам строительных материалов. Этот интернет-магазин помог мне не только выбрать правильные материалы, но и дал советы по их применению. Цены очень доступные, и даже при моем ограниченном бюджете я смог найти всё необходимое. Доставка была быстрой и без проблем. Спасибо этому магазину за поддержку начинающих строителей!</p>
+                        </div>
+                        <div class="review-strs-line">
+                            <div class="strs-button-wrap">
+                                <a href="" class="back-btn">
+                                    <i class="arrow fa-solid fa-arrow-left-long"></i>
+                                    Назад
+                                </a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-first-num-btn">1</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-num-btn">2</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-num-btn">3</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-num-btn">4</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-num-btn">5</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-num-btn">...</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="back-btn">
+                                    <i class="arrow fa-solid fa-arrow-right-long"></i>
+                                    Далее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review-mobile-str">
+                            <div class="strs-button-wrap">
+                                <a href="" class="back-btn">
+                                    <i class="arrow fa-solid fa-arrow-left-long"></i>   
+                                </a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-first-num-btn">1</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-num-btn">2</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="strs-num-btn">3</a>
+                            </div>
+                            <div class="strs-button-wrap">
+                                <a href="" class="back-btn">
+                                    <i class="arrow fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review-leave-block">
+                            <div class="review-title-wrap">
+                                <h2 class="review-title-wrap">Оставить отзыв</h2>
+                            </div>
+                            <div class="review-inputs">
+                                <div class="review-first-inputs">
+                                    <div class="review-first-input-wrap">
+                                        <h2 class="first-input-title">
+                                            Ваше имя *:
+                                        </h2>
+                                        <input placeholder="Введите ваше имя" type="text" class="first-input">
+                                    </div>
+                                    <div class="review-first-input-wrap">
+                                        <h2 class="first-input-title">
+                                            Email *:
+                                        </h2>
+                                        <input placeholder="Введите ваш электронный адрес" type="text" class="first-input">
+                                    </div>
+                                </div>
+                                <div class="review-text-input">
+                                    <h2 class="first-input-title">
+                                        Текст отзыва *:
+                                    </h2>
+                                    <input placeholder="Ваш отзыв" type="text" class="text-input">
+                                    <h2 class="first-input-title">
+                                        Прикрепить фото:
+                                    </h2>
+                                    <div class="review-photo-wrap">
+                                        <div class="image-wrap">
+                                            <i class="image fa-regular fa-image"></i>
+                                        </div>
+                                        <p class="review-photo-text">Нажмите для загрузки или перетащите файл в это поле</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-buttons-line">
+                                <div class="review-send-button">
+                                    <a href="" class="send-button">Отправить</a>
+                                </div>
+                                <input class="send-check" type="checkbox" name="" id="">
+                                <p class="send-text">Согласен с обработкой персональных данных в соответствии с политикой конфиденциальности</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-cards-block">
+                        <div class="cards">
+                            <article class="review-card all ">
+                                <div class="review-card-text-wrap">
+                                    <h2 class="review-card-title">Все для отоплления</h2>
+                                    <p class="card-cost">до -30%</p>
+                                </div>
+                            </article>
+                            <article class="review-card lock">
+                                <div class="review-card-text-wrap">
+                                    <h2 class="review-card-title">Лакокрасочные материалы</h2>
+                                    <p class="card-cost">до -30%</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="review-register-block">
+                            <div class="register-title-wrap">
+                                <h2 class="register-main-title">
+                                    Подпишитесь на рассылку
+                                </h2>
+                                <p class="register-title">
+                                    Регулярные скидки и спецпредложения, а так же новости компании.
+                                </p>
+                            </div>
+                            <input type="text" placeholder="Email" class="register-input">
+                            <div class="register-button">
+                                <a href="" class="register-btn">Подписаться</a>
+                            </div>
+                            <div class="register-check-wrap">
+                                <input class="register-check" type="checkbox" name="" id="">
+                                <p class="register-text">Согласен с обработкой персональных данных в соответствии с политикой конфиденциальности</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="#"
+                        ><img src="../img/icons/logo.svg" alt=""
+                    /></a>
+                </div>
+
+                <p class="footer--hide">ООО «Стройоптторг»</p>
+
+                <p class="footer--hide">
+                    <span class="span-block">ИНН: 0901051787</span> КПП
+                    090101001
+                </p>
+
+                <p>
+                    <span class="span-block">Email</span>
+                    <a href="#" class="footer__top-email">
+                        info@stroiopttorg.ru
+                    </a>
+                </p>
+
+                <p>
+                    <span class="span-block footer__top--bold">
+                        8 800 444 00 65
+                    </span>
+
+                    Ежедневно, с 8:00 до 18:00
+                </p>
+
+                <a href="#" class="footer__top-btn">ЗАКАЗАТЬ ЗВОНОК</a>
+            </div>
+
+            <div class="footer__middle">
+                <div class="footer__middle-information">
+                    <h3 class="footer__middle-information-title">
+                        Информация
+                    </h3>
+                    <nav class="nav">
+                        <ul class="nav__ul">
+                            <li class="nav__li">
+                                <a href="#">О компании</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Возрат</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Возраты</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav__ul">
+                            <li class="nav__li">
+                                <a href="#">Вопрос-ответ </a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Новости</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Вход \ Регистрация</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Все акции</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__middle-catalog footer--hide-adaptive">
+                    <h3 class="footer__middle-catalog-title">Каталог</h3>
+                    <nav class="nav">
+                        <ul class="nav__ul">
+                            <li class="nav__li">
+                                <a href="#">Общестроительные материалы</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Все для сауны и бани</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Инструмент</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Отделочные материалы</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#"
+                                    >Товары для дома, сада и огорода</a
+                                >
+                            </li>
+                        </ul>
+
+                        <ul class="nav__ul footer--hide">
+                            <li class="nav__li">
+                                <a href="#">Электротовары </a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Сантехника</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Столярные изделия</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#"
+                                    ><span class="span-block"
+                                        >Спецодежда и средства</span
+                                    >
+                                    индивидуальной пожарной защиты</a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="nav__ul">
+                            <li class="nav__li">
+                                <a href="#"
+                                    ><span class="span-block">
+                                        Водо-газоснабжение,</span
+                                    >
+                                    отопление, вентиляция</a
+                                >
+                            </li>
+                            <li class="nav__li">
+                                <a href="#"
+                                    ><span class="span-block"
+                                        >Метизные, такелажные и
+                                        скобяные</span
+                                    >
+                                    изделия</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer--hide">
+                    <span class="span-block">Мы принимаем</span> к оплате:
+                </p>
+                <div class="banks">
+                    <a href="#"
+                        ><img src="../img/icons/Visa.svg" alt="visa"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../img/icons/mastercard.svg"
+                            alt="mastercard"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="../img/icons/sber-bank.svg"
+                            alt="sber-bank"
+                    /></a>
+                    <a href="#"
+                        ><img src="../img/icons/Mir.svg" alt="Mir"
+                    /></a>
+                    <a href="#"
+                        ><img src="../img/icons/Xalva.svg" alt="Xalva"
+                    /></a>
+                    <a href="#"
+                        ><img src="../img/icons/Tinkoff.svg" alt="Tinkoff"
+                    /></a>
+                </div>
+                <form class="footer__bottom-form">
+                    <input
+                        type="text"
+                        placeholder="Ваш email"
+                        class="footer__bottom-input"
+                    />
+                    <button type="submit" class="footer__bottom-button">
+                        <img src="../img/icons/send.svg" alt="send" />
+                    </button>
+                </form>
+            </div>
+            <div class="footer__policy">
+                <p>© 2024 CodeCultis</p>
+                <p>Created by Daniyal</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.best-deals {
+    margin-bottom: $margin-large;
+
+    &__title {
+        @include h2();
+        margin-bottom: $margin-regular;
+    }
+
+    &__types {
+        @include flex-row-center($gap-xxsmall);
+        margin-bottom: $margin-xmedium;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .best-deals {
+        &__types {
+            overflow-y: hidden;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@import "../scss-utils/variables",
+        "../scss-utils/mixin";
+
+.about-shop {
+    position: relative;
+    margin-bottom: 18rem;
+    padding-left: 15rem;
+
+    &__numbers {
+        @include flex-row-center(6.2rem);
+        margin-bottom: $margin-xsmall;
+    }
+
+    &__number {
+        @include text($clr-fourteenth-gray, 400, $font-size-s, 1.8rem);
+        &--blue {
+            @include text($clr-secondary-blue, 550, $font-size-xm);
+        }
+    }
+
+    &__text {
+        @include text($clr-third-gray, 500, $font-size-s);
+        margin-bottom: $margin-xsmall;
+    }
+
+    h2 {
+        color: $clr-third-gray;
+
+        max-width: 72.8rem;
+        margin-bottom: $margin-small;
+    }
+
+    p {
+        color: $clr-third-gray;
+        font-size: $font-size-s;
+        line-height: 2.7rem;
+
+        max-width: 89.9rem;
+        margin-bottom: $margin-medium;
+    }
+
+    .about-shop--img-first {
+        position: absolute;
+        right: 0;
+        top: 0;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-large {
+        font-size: 3rem;
+    }
+
+    .title-small {
+        max-width: 71.8rem;
+    }
+
+    .about-shop--img-first {
+        display: none;
+    }
+
+    .about-shop--img-last {
+        display: block ;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 46.8rem;
+        height: 30.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-shop {
+        margin-bottom: $margin-medium;
+    }
+}
+
+@media (max-width: 360px) {
+    .about {
+        margin-bottom: 3.7rem;
+    }
+
+    .about--img-last {
+        position: relative;
+        width: 43.5rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-shop {
+        padding: 2.5rem;
+
+        &__numbers{
+            flex-wrap: wrap;
+        }
+
+        & img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .about-shop {
+        & img {
+            display: none;
+        }
+    }
+}

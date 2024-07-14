@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Главная</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/2212a15975.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top--wrp">
+                        <nav class="header__top-links">
+                            <a href="./pages/about-company.html" class="header__top-item">О компании</a>
+                            <a href="./pages/payment.html" class="header__top-item">Оплата</a>
+                            <a href="./pages/delivery.html" class="header__top-item">Доставка</a>
+                            <a href="./pages/refund.html" class="header__top-item">Возрат </a>
+                            <a href="./pages/reviews.html" class="header__top-item">Отзывы</a>
+                            <a href="./pages/question.html" class="header__top-item"
+                                >Вопрос-ответ</a
+                            >
+                            <a href="./pages/blog.html" class="header__top-item">Новости</a>
+                            <a href="./pages/contacts.html" class="header__top-item">Контакты</a>
+                        </nav>
+                        <div class="header__top-about">
+                            <p class="header__top-about-schedule">
+                                Ежедневно, с 8:00 до 18:00
+                            </p>
+                            <p class="header__top-about-number">
+                                8 800 444 00 65
+                            </p>
+                            <a href="./pages/making-an-order.html" class="header__top-about-button btn"
+                                >ЗАКАЗАТЬ ЗВОНОК</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header--wrapper">
+                        <div class="logo">
+                            <a href="./index.html"
+                                ><img src="./img/icons/logo.svg" alt="logo"
+                            /></a>
+                        </div>
+                        <a href="./pages/products-catalog.html" class="header__bottom-catalog-btn"
+                            ><img
+                                src="./img/icons/Parallel.svg"
+                                alt="parallel"
+                            />КАТАЛОГ</a
+                        >
+                        <div class="search">
+                            <form action="" method="get" class="search__form">
+                                <input
+                                    name="s"
+                                    placeholder="Найти среди 50000 товаров. Например: Дрель Bosch"
+                                    type="search"
+                                    class="search__input"
+                                />
+                                <button type="submit" class="search__button">
+                                    <img
+                                        src="./img/icons/search.svg"
+                                        alt="search"
+                                    />
+                                </button>
+                            </form>
+                        </div>
+
+                        <nav class="header__bottom-links">
+                            <a href="./pages/actions.html" class="header__bottom-item"
+                                ><span class="span-block"
+                                    ><img
+                                        src="./img/icons/gift.svg"
+                                        alt="gift" /></span
+                                >Все акции</a
+                            >
+                            <a href="./pages/personal-account.html" class="header__bottom-item"
+                                ><span class="span-block"
+                                    ><img
+                                        src="./img/icons/login.svg"
+                                        alt="gift" /></span
+                                >Войти</a
+                            >
+                            <a href="./pages/comparisons.html" class="header__bottom-item"
+                                ><span class="span-block"
+                                    ><img
+                                        src="./img/icons/Comparison.svg"
+                                        alt="gift" /></span
+                                >Сравнение</a
+                            >
+                            <a href="./pages/favourite.html" class="header__bottom-item"
+                                ><span class="span-block"
+                                    ><img
+                                        src="./img/icons/heart.svg"
+                                        alt="gift" /></span
+                                >Избранное</a
+                            >
+                            <a href="./pages/cart.html" class="header__bottom-item"
+                                ><span class="span-block"
+                                    ><img
+                                        src="./img/icons/cart.svg"
+                                        alt="gift" /></span
+                                >Корзина</a
+                            >
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <header class="header__adaptive">
+            <div class="container">
+                <div class="header__adaptive-top">
+                    <div class="menu">
+                        <input
+                            type="checkbox"
+                            id="burger-checkbox"
+                            class="burger-checkbox"
+                        />
+                        <label for="burger-checkbox" class="burger"></label>
+                        <ul class="menu-list">
+                            <li><a href="./pages/about-company.html" class="menu-item">О КОМПАНИИ</a></li>
+                            <li></li>
+                            <li><a href="./pages/payment.html" class="menu-item">ОПЛАТА</a></li>
+                            <li></li>
+                            <li><a href="./pages/delivery.html" class="menu-item">ДОСТАВКА</a></li>
+                            <li></li>
+                            <li><a href="./pages/refund.html" class="menu-item">ВОЗРАТ</a></li>
+                            <li></li>
+                            <li><a href="./pages/reviews.html" class="menu-item">ОТЗЫВЫ</a></li>
+                            <li></li>
+                            <li><a href="./pages/question.html" class="menu-item">ВОПРОС-ОТВЕТ</a></li>
+                            <li></li>
+                            <li><a href="./pages/blog.html" class="menu-item">НОВОСТИ</a></li>
+                            <li></li>
+                            <li><a href="./pages/contacts.html" class="menu-item">КОНТАКТЫ</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="header__adaptive-top-about">
+                        <p
+                            class="header__adaptive-top-about-schedule header--hide"
+                        >
+                            Ежедневно, с 8:00 до 18:00
+                        </p>
+                        <p class="header__adaptive-top-about-number">
+                            8 800 444 00 65
+                        </p>
+                        <a href="./pages/making-an-order.html" class="header__adaptive-top-about-button"
+                            >ЗАКАЗАТЬ ЗВОНОК</a
+                        >
+                    </div>
+                </div>
+                <div class="header__adaptive-middle">
+                    <div class="logo">
+                        <a href="./index.html"
+                            ><img src="./img/icons/logo.svg" alt=""
+                        /></a>
+                    </div>
+                    <nav class="header__adaptive-middle-links">
+                        <a href="./pages/actions.html" class="header__adaptive-middle-item">
+                            <span class="span-block"
+                                ><img
+                                    src="./img/icons/gift.svg"
+                                    alt="gift" /></span
+                            ><span class="header--hide">Все акции</span>
+                        </a>
+                        <a href="./pages/personal-account.html" class="header__adaptive-middle-item">
+                            <span class="span-block"
+                                ><img
+                                    src="./img/icons/login.svg"
+                                    alt="gift" /></span
+                            ><span class="header--hide">Войти</span>
+                        </a>
+                        <a href="./pages/comparisons.html" class="header__adaptive-middle-item">
+                            <span class="span-block"
+                                ><img
+                                    src="./img/icons/Comparison.svg"
+                                    alt="gift" /></span
+                            ><span class="header--hide">Сравнение</span>
+                        </a>
+                        <a href="./pages/favourite.html" class="header__adaptive-middle-item">
+                            <span class="span-block"
+                                ><img
+                                    src="./img/icons/heart.svg"
+                                    alt="gift" /></span
+                            ><span class="header--hide">Избранное</span>
+                        </a>
+                        <a
+                            href="./pages/cart.html"
+                            class="header__adaptive-middle-item header--hide"
+                        >
+                            <span class="span-block"
+                                ><img
+                                    src="./img/icons/cart.svg"
+                                    alt="gift" /></span
+                            >Корзина
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="header__adaptive-bottom">
+                    <a href="./pages/products-catalog.html" class="header__adaptive-bottom-catalog-btn"
+                        ><img
+                            src="./img/icons/Parallel.svg"
+                            alt="parallel"
+                        />КАТАЛОГ</a
+                    >
+
+                    <div class="search">
+                        <form action="" method="get" class="search__form">
+                            <input
+                                name="s"
+                                placeholder="Найти среди 50000 товаров. Например: Дрель Bosch"
+                                type="search"
+                                class="search__input"
+                            />
+                            <button type="submit" class="search__button">
+                                <img
+                                    src="./img/icons/search.svg"
+                                    alt="search"
+                                />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="power-tool">
+                <div class="container">
+                    <img
+                        src="./img/images/main/big-img.png"
+                        alt=""
+                        class="power-tool__img"
+                    />
+                    <img
+                        src="./img/images/main/big-img-adaptive.png"
+                        alt="power-tool"
+                        class="power-tool__img-adaptive"
+                    />
+                    <img
+                        src="./img/images/main/big-img-adaptive-tel.png"
+                        alt="power-tool"
+                        class="power-tool__img-adaptive-tel"
+                    />
+                    <a href="./pages/404.html" class="owl-btn previous"
+                        ><i class="fa-solid fa-chevron-left"></i
+                    ></a>
+                    <a href="./pages/products-catalog.html" class="owl-btn next"
+                        ><i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                    <div class="power-tool__content">
+                        <h1 class="power-tool__content-title">
+                            <span class="span-block">Электроинструмент</span>
+                            для любых нужд
+                        </h1>
+                        <p
+                            class="power-tool__content-text power-tool--hide-tel"
+                        >
+                            <span class="span-block"
+                                >У нас обновился ассортимент сантехники, мебели
+                                для</span
+                            >
+                            ванной комнаты, а так же других сопутствующих
+                            товаров.
+                        </p>
+                        <a href="./pages/products-catalog.html" class="power-tool__container-btn"
+                            >ПЕРЕЙТИ К ТОВАРАМ
+                            <i class="fa-solid fa-chevron-right"></i
+                        ></a>
+                        <a href="./pages/404.html"
+                            ><img
+                                src="./img/icons/page-listing.svg"
+                                alt="page-listing"
+                                class="page-listing"
+                        /></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="assortment">
+                <div class="container">
+                    <div class="assortment__top-wrapper">
+                        <span class="assortment__payment">
+                            <i class="fa-regular fa-credit-card"></i>Оплата
+                            любым удобным способом
+                        </span>
+                        <span class="assortment__top-payment">
+                            <i class="fa-solid fa-list"></i>Большой выбор
+                            товаров в каталоге
+                        </span>
+                        <span class="assortment__top-payment">
+                            <i class="fa-solid fa-box"></i>Осуществляем быструю
+                            доставку
+                        </span>
+                        <span class="assortment__top-payment">
+                            <i class="fa-solid fa-percent"></i>Делаем скидки на
+                            крупные покупки
+                        </span>
+                    </div>
+
+                    <div class="assortment__middle">
+                        <div class="assortment__middle-wrapper">
+                            <article class="assortment__middle-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/items/plumbing.png"
+                                    alt="plumbing"
+                                />
+                                <p class="assortment__middle-card-text">
+                                    Сантехника
+                                </p>
+                            </article>
+                            <article class="assortment__middle-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/items/finishing-materials.png"
+                                    alt="plumbing"
+                                />
+                                <p class="assortment__middle-card-text">
+                                    <span class="span-block"> Отделочные </span>
+                                    материалы
+                                </p>
+                            </article>
+                            <article class="assortment__middle-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/items/electrical-goods.png"
+                                    alt="plumbing"
+                                />
+                                <p class="assortment__middle-card-text">
+                                    Электротовары
+                                </p>
+                            </article>
+                            <article class="assortment__middle-card">
+                                <a href="./pages/404.html/pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/items/instruments.png"
+                                    alt="plumbing"
+                                />
+                                <p class="assortment__middle-card-text">
+                                    Инструменты
+                                </p>
+                            </article>
+                            <article class="assortment__middle-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/items/joinery.png"
+                                    alt="plumbing"
+                                />
+                                <p class="assortment__middle-card-text">
+                                    <span class="span-block">Столярные</span>
+                                    изделия
+                                </p>
+                            </article>
+                            <article class="assortment__middle-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/items/construction-materials.png"
+                                    alt="plumbing"
+                                />
+                                <p class="assortment__middle-card-text">
+                                    <span class="span-block"
+                                        >Общестроительные</span
+                                    >
+                                    материалы
+                                </p>
+                            </article>
+                            <article class="assortment__middle-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/items/for-bathhouse.png"
+                                    alt="plumbing"
+                                />
+                                <p class="assortment__middle-card-text">
+                                    <a href="./pages/404.html"></a>
+                                    <span class="span-block">
+                                        Все для сауны
+                                    </span>
+                                    и бани
+                                </p>
+                            </article>
+                            <article
+                                class="assortment__middle-card assortment__middle-card-chevron"
+                            >
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/items/rigth-chevron.svg"
+                                    alt=""
+                                />
+                                <p class="assortment__middle-card-text">
+                                    <span class="span-block">Перейти в</span>
+                                    Каталог
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="assortment__bottom">
+                        <div class="assortment__bottom-wrapper">
+                            <article class="assortment__bottom-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/materials/Nails.png"
+                                    alt="Nails-bg"
+                                />
+                                <div class="assortment__bottom-card-content">
+                                    <div class="assortment__bottom-card-text">
+                                        <span class="span-block">Метизные</span>
+                                        изделия
+                                    </div>
+                                    <span
+                                        class="assortment__bottom-card-discount discount"
+                                    >
+                                        до -15%
+                                    </span>
+                                </div>
+                            </article>
+                            <article class="assortment__bottom-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/materials/paint.png"
+                                    alt="Nails-bg"
+                                />
+                                <div class="assortment__bottom-card-content">
+                                    <div class="assortment__bottom-card-text">
+                                        <span class="span-block">Метизные</span>
+                                        изделия
+                                    </div>
+                                    <span
+                                        class="assortment__bottom-card-discount discount"
+                                    >
+                                        до -15%
+                                    </span>
+                                </div>
+                            </article>
+                            <article class="assortment__bottom-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/materials/overlaying.png"
+                                    alt="Nails-bg"
+                                />
+                                <div class="assortment__bottom-card-content">
+                                    <div class="assortment__bottom-card-text">
+                                        <span class="span-block">Метизные</span>
+                                        изделия
+                                    </div>
+                                    <span
+                                        class="assortment__bottom-card-discount discount"
+                                    >
+                                        до -15%
+                                    </span>
+                                </div>
+                            </article>
+                            <article class="assortment__bottom-card">
+                                <a href="./pages/404.html"></a>
+                                <img
+                                    src="./img/images/main/materials/Tube.png"
+                                    alt="Nails-bg"
+                                />
+                                <div class="assortment__bottom-card-content">
+                                    <div class="assortment__bottom-card-text">
+                                        <span class="span-block">Метизные</span>
+                                        изделия
+                                    </div>
+                                    <span
+                                        class="assortment__bottom-card-discount discount"
+                                    >
+                                        до -15%
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bestsellers">
+                <div class="container">
+                    <h2 class="bestsellers__title">Хиты продаж</h2>
+                    <div class="bestsellers__types">
+                        <a
+                            href="./pages/404.html"
+                            class="bestsellers__types-item bestsellers__types-item-active"
+                            >Все товары</a
+                        >
+                        <a href="./pages/404.html" class="bestsellers__types-item"
+                            >Инструменты</a
+                        >
+                        <a href="./pages/404.html" class="bestsellers__types-item"
+                            >Сантехника</a
+                        >
+                        <a href="./pages/404.html" class="bestsellers__types-item">Для дома</a>
+                        <a href="./pages/404.html" class="bestsellers__types-item">Для сада</a>
+                    </div>
+
+                    <div class="bestsellers__cards">
+                        <article class="bestsellers__card">
+                            <img
+                                src="./img/images/main/card-img/Wander-x645-46-GF-1450W.png"
+                                alt="Wandex-product"
+                                class="bestsellers__card-img"
+                            />
+                            <p class="bestsellers__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="bestsellers__card-title">
+                                <span class="span-block">
+                                    Перфоратор универсальный
+                                </span>
+                                Wander X645-46 GF 1450W
+                            </h4>
+                            <p class="bestsellers__card-price">
+                                <span
+                                    class="bestsellers__card-price--strikethough"
+                                    >1599 ₽</span
+                                >
+                                12 789 ₽
+                                <span
+                                    class="bestsellers__card-price-discount discount"
+                                    >-15%</span
+                                >
+                            </p>
+
+                            <div class="bestsellers__card-buy">
+                                <a href="./pages/404.html" class="owl-btn previous"
+                                    ><i class="fa-solid fa-chevron-left"></i
+                                ></a>
+                                <a href="./pages/making-an-order.html" class="bestsellers__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="bestsellers__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart bestsellers__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple bestsellers__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="bestsellers__card">
+                            <img
+                                src="./img/images/main/card-img/Faris-G-120-6.png"
+                                alt="Wandex-product"
+                                class="bestsellers__card-img"
+                            />
+                            <p class="bestsellers__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="bestsellers__card-title">
+                                <span class="span-block">
+                                    Перфоратор универсальный
+                                </span>
+                                Wander X645-46 GF 1450W
+                            </h4>
+                            <p class="bestsellers__card-price">1789 ₽</p>
+
+                            <div class="bestsellers__card-buy">
+                                <a
+                                    href="./pages/making-an-order.html"
+                                    class="bestsellers__card-buy-btn added-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="bestsellers__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart bestsellers__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple bestsellers__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="bestsellers__card">
+                            <img
+                                src="./img/images/main/card-img/Spiral-100-8.png"
+                                alt="Wandex-product"
+                                class="bestsellers__card-img"
+                            />
+                            <p class="bestsellers__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="bestsellers__card-title">
+                                <span class="span-block">
+                                    Перфоратор универсальный
+                                </span>
+                                Wander X645-46 GF 1450W
+                            </h4>
+                            <p class="bestsellers__card-price">
+                                <span
+                                    class="bestsellers__card-price--strikethough"
+                                    >1599 ₽</span
+                                >
+                                12 789 ₽
+                                <span
+                                    class="bestsellers__card-price-discount discount"
+                                    >-15%</span
+                                >
+                            </p>
+
+                            <div class="bestsellers__card-buy">
+                                <a href="./pages/making-an-order.html" class="bestsellers__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="bestsellers__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart bestsellers__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple bestsellers__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article
+                            class="bestsellers__card bestsellers__card--hide"
+                        >
+                            <img
+                                src="./img/images/main/card-img/Aragio-with-double-drain-6.png"
+                                alt="Wandex-product"
+                                class="bestsellers__card-img"
+                            />
+                            <p class="bestsellers__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="bestsellers__card-title">
+                                <span class="span-block">
+                                    Унитаз подвесной Aragio с
+                                </span>
+                                двойным сливом
+                            </h4>
+                            <p class="bestsellers__card-price">
+                                <span
+                                    class="bestsellers__card-price--strikethough"
+                                    >1599 ₽</span
+                                >
+                                12 789 ₽
+                                <span
+                                    class="bestsellers__card-price-discount discount"
+                                    >-15%</span
+                                >
+                            </p>
+
+                            <div class="bestsellers__card-buy">
+                                <a href="./pages/making-an-order.html" class="bestsellers__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="bestsellers__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart bestsellers__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple bestsellers__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article
+                            class="bestsellers__card bestsellers__card--hide"
+                        >
+                            <a href="./pages/404.html" class="owl-btn next"
+                                ><i class="fa-solid fa-chevron-right"></i
+                            ></a>
+                            <img
+                                src="./img/images/main/card-img/Faris-G-120-2.png"
+                                alt="Wandex-product"
+                                class="bestsellers__card-img"
+                            />
+                            <p class="bestsellers__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="bestsellers__card-title">
+                                <span class="span-block">
+                                    Перфоратор универсальный
+                                </span>
+                                Wander X645-46 GF 1450W
+                            </h4>
+                            <p class="bestsellers__card-price">
+                                <span
+                                    class="bestsellers__card-price--strikethough"
+                                    >1599 ₽</span
+                                >
+                                12 789 ₽
+                                <span
+                                    class="bestsellers__card-price-discount discount"
+                                    >-15%</span
+                                >
+                            </p>
+
+                            <div class="bestsellers__card-buy">
+                                <a href="./pages/making-an-order.html" class="bestsellers__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="bestsellers__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart bestsellers__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple bestsellers__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular-brands">
+                <div class="container">
+                    <h2 class="popular-brands__title">Популярные бренды</h2>
+
+                    <div class="popular-brands__wrapper">
+                        <a href="./pages/404.html" class="owl-btn previous"
+                            ><i class="fa-solid fa-chevron-left"></i
+                        ></a>
+                        <a href="./pages/404.html" class="popular-brands__item"
+                            ><img
+                                src="./img/images/main/brands/keramin.png"
+                                alt="keramin"
+                        /></a>
+                        <a href="./pages/404.html" class="popular-brands__item"
+                            ><img
+                                src="./img/images/main/brands/electrolux.png"
+                                alt="keramin"
+                        /></a>
+                        <a href="./pages/404.html" class="popular-brands__item"
+                            ><img
+                                src="./img/images/main/brands/bosch.png"
+                                alt="keramin"
+                        /></a>
+                        <a
+                            href="./pages/404.html"
+                            class="popular-brands__item popular-brands__item--hide"
+                            ><img
+                                src="./img/images/main/brands/oasis.png"
+                                alt="keramin"
+                        /></a>
+                        <a href="./pages/404.html" class="popular-brands__item"
+                            ><img
+                                src="./img/images/main/brands/kinplast.png"
+                                alt="keramin"
+                        /></a>
+                        <a
+                            href="./pages/404.html"
+                            class="popular-brands__item popular-brands__item--hide"
+                            ><img
+                                src="./img/images/main/brands/caresit.png"
+                                alt="keramin"
+                        /></a>
+                        <a
+                            href="./pages/404.html"
+                            class="popular-brands__item popular-brands__item--hide"
+                            ><img
+                                src="./img/images/main/brands/bauprofee.png"
+                                alt="keramin"
+                        /></a>
+                        <a href="./pages/404.html" class="owl-btn next"
+                            ><i class="fa-solid fa-chevron-right"></i
+                        ></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="best-deals">
+                <div class="container">
+                    <h2 class="best-deals__title">Лучшие предложения</h2>
+                    <div class="best-deals__types">
+                        <a
+                            href="./pages/404.html"
+                            class="best-deals__types-item best-deals__types-item-active"
+                            >Все товары</a
+                        >
+                        <a href="./pages/404.html" class="best-deals__types-item"
+                            >Инструменты</a
+                        >
+                        <a href="./pages/404.html" class="best-deals__types-item"
+                            >Сантехника</a
+                        >
+                        <a href="./pages/404.html" class="best-deals__types-item">Для дома</a>
+                        <a href="./pages/404.html" class="best-deals__types-item">Для сада</a>
+                    </div>
+
+                    <div class="best-deals__cards">
+                        <article class="best-deals__card">
+                            <img
+                                src="./img/images/main/card-img/Nozzle-Tok.png"
+                                alt="Wandex-product"
+                                class="bestsellers__card-img"
+                            />
+                            <p class="best-deals__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="best-deals__card-title">
+                                <span class="span-block">
+                                    Набор гравированных
+                                </span>
+                                нассадок Nozzle-Tok
+                            </h4>
+                            <p class="best-deals__card-price">
+                                <span
+                                    class="best-deals__card-price--strikethough"
+                                    >1599 ₽</span
+                                >
+                                12 789 ₽
+                                <span
+                                    class="best-deals__card-price-discount discount"
+                                    >-15%</span
+                                >
+                            </p> 
+
+                            <div class="best-deals__card-buy">
+                                <a href="./pages/404.html" class="owl-btn previous"
+                                    ><i class="fa-solid fa-chevron-left"></i
+                                ></a>
+                                <a href="./pages/making-an-order.html" class="best-deals__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="best-deals__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart best-deals__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple best-deals__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="best-deals__card">
+                            <img
+                                src="./img/images/main/card-img/Aragio-with-double-drain-3.png"
+                                alt="Wandex-product"
+                                class="best-deals__card-img"
+                            />
+                            <p class="best-deals__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="best-deals__card-title">
+                                <span class="span-block">
+                                    Набор гравированных
+                                </span>
+                                нассадок Nozzle-Tok
+                            </h4>
+                            <p class="best-deals__card-price">
+                                <span
+                                    class="best-deals__card-price--strikethough"
+                                    >312 ₽</span
+                                >
+                                216 ₽
+                                <span
+                                    class="best-deals__card-price-discount discount"
+                                    >-10%</span
+                                >
+                            </p>
+
+                            <div class="best-deals__card-buy">
+                                <a href="./pages/404.html" class="best-deals__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="best-deals__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart best-deals__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple best-deals__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="best-deals__card">
+                            <img
+                                src="./img/images/main/card-img/gladiator.png"
+                                alt="Wandex-product"
+                                class="best-deals__card-img"
+                            />
+                            <p class="best-deals__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="best-deals__card-title">
+                                <span class="span-block">
+                                    Набор гравированных
+                                </span>
+                                нассадок Nozzle-Tok
+                            </h4>
+                            <p class="best-deals__card-price">1789 ₽</p>
+
+                            <div class="best-deals__card-buy">
+                                <a href="./pages/making-an-order.html" class="best-deals__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="best-deals__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart best-deals__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple best-deals__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article
+                            class="best-deals__card best-deals__card--hide"
+                        >
+                            <img
+                                src="./img/images/main/card-img/Aragio-with-double-drain-7.png"
+                                alt="Wandex-product"
+                                class="best-deals__card-img"
+                            />
+                            <p class="best-deals__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="best-deals__card-title card">
+                                <span class="span-block">
+                                    Унитаз подвесной Aragio с
+                                </span>
+                                двойным сливом
+                            </h4>
+                            <p class="best-deals__card-price">
+                                <span
+                                    class="best-deals__card-price--strikethough"
+                                    >1599 ₽</span
+                                >
+                                12 789 ₽
+                                <span
+                                    class="best-deals__card-price-discount discount"
+                                    >-15%</span
+                                >
+                            </p>
+
+                            <div class="best-deals__card-buy">
+                                <a href="./pages/making-an-order.html" class="best-deals__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="best-deals__card-second-side">
+                                    <a href="./pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart best-deals__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple best-deals__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article
+                            class="best-deals__card best-deals__card--hide"
+                        >
+                            <a href="./pages/404.html" class="owl-btn next"
+                                ><i class="fa-solid fa-chevron-right"></i
+                            ></a>
+                            <img
+                                src="./img/images/main/card-img/cob.png"
+                                alt="Wandex-product"
+                                class="best-deals__card-img"
+                            />
+                            <p class="best-deals__card-text">
+                                Артикул: XJ89YHGO
+                            </p>
+                            <h4 class="best-deals__card-title card">
+                                <span class="span-block">
+                                    Водно-дисперсионный клей
+                                </span>
+                                Cob
+                            </h4>
+                            <p class="best-deals__card-price">
+                                <span
+                                    class="best-deals__card-price--strikethough"
+                                    >1599 ₽</span
+                                >
+                                12 789 ₽
+                                <span
+                                    class="best-deals__card-price-discount discount"
+                                    >-15%</span
+                                >
+                            </p>
+
+                            <div class="best-deals__card-buy">
+                                <a href="./pages/making-an-order.html" class="best-deals__card-buy-btn"
+                                    ><i class="fa-solid fa-cart-shopping"></i>
+                                    Купить</a
+                                >
+                                <div class="best-deals__card-second-side">
+                                    <a href="./pages/404.html/pages/404.html"></a>
+                                    <i
+                                        class="fa-regular fa-heart best-deals__card-second-side-item"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-chart-simple best-deals__card-second-side-item"
+                                    ></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="about-shop">
+                <h1 class="title-large">О магазине</h1>
+                <p class="about-shop__text">
+                    Цель и главная задача компании- создать сервис, который не
+                    ограничится продажей строительных и отделочных материалов, а
+                    будет решать задачи и трудности, с которыми сталкиваются
+                    люди во время ремонта.
+                </p>
+
+                <div class="about-shop__numbers">
+                    <div class="about-shop__number">
+                        <span class="span-block about-shop__number--blue">
+                            17 805,3 м²
+                        </span>
+                        <span class="span-block"> Торговых и складских </span>
+                        помещений
+                    </div>
+
+                    <div class="about-shop__number">
+                        <span class="span-block about-shop__number--blue">
+                            50 000+
+                        </span>
+                        <span class="span-block">Наименований</span>
+                        товара
+                    </div>
+
+                    <div class="about-shop__number">
+                        <span class="span-block about-shop__number--blue">
+                            2 500+
+                        </span>
+                        <span class="span-block">Постоянных</span>
+                        клиентов
+                    </div>
+
+                    <div class="about-shop__number">
+                        <span class="span-block about-shop__number--blue">
+                            440
+                        </span>
+                        <span class="span-block">Опытных</span>
+                        сотрудников
+                    </div>
+                </div>
+
+                <p class="about-shop__text">
+                    Уже второе десятилетие мы готовы воплотить в реальность Вашу
+                    мечту о красивом, комфортабельном доме, благоустроенном
+                    современном офисе, уютной теплой даче, помочь реализовать
+                    любые строительные и дизайнерские фантазии и с минимальными
+                    затратами времени и денежных средств.
+                </p>
+
+                <a href="./pages/about-company.html" class="about-shop__btn">
+                    ПОДРОБНЕЕ О КОМПАНИИ
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+
+                <img
+                    src="./img/bg/arrangement-yellow-set-repair-tools-1.png"
+                    alt="картинка"
+                    class="about-shop--img-first"
+                />
+                <img
+                    src="./img/bg/about-company/arrangement-yellow-set-repair-tools1.png"
+                    alt="картинка"
+                    class="about-shop--img-last none"
+                />
+            </section>
+
+            <section class="last-news">
+                <div class="container">
+                    <h2 class="last-news__title">Последние новости</h2>
+                    <div class="last-news__wrapper">
+                        <article class="last-news__card">
+                            <a href="./pages/blog.html"></a>
+                            <img
+                                src="./img/images/main/last-news/last-news--1.png"
+                                alt="image"
+                                class="last-news__card-img"
+                            />
+                            <h3 class="last-news__card-title">
+                                <span class="span-block"
+                                    >Масштабное обновление каталога</span
+                                >
+                                инструментов
+                            </h3>
+
+                            <p class="last-news__card-text">
+                                <span class="span-block">
+                                    С радостью сообщаем вам о крупном пополнении
+                                </span>
+                                нашего каталога инструментов.
+                            </p>
+
+                            <p class="last-news__card-date">5 Августа 2023</p>
+                        </article>
+                        <article class="last-news__card">
+                            <a href="./pages/blog.html"></a>
+                            <img
+                                src="./img/images/main/last-news/last-news--2.png"
+                                alt="image"
+                                class="last-news__card-img"
+                            />
+                            <h3 class="last-news__card-title">
+                                <span class="span-block"
+                                    >Масштабное обновление каталога</span
+                                >
+                                инструментов
+                            </h3>
+
+                            <p class="last-news__card-text">
+                                <span class="span-block">
+                                    С радостью сообщаем вам о крупном пополнении
+                                </span>
+                                нашего каталога инструментов.
+                            </p>
+
+                            <p class="last-news__card-date">5 Августа 2023</p>
+                        </article>
+                        <article class="last-news__card">
+                            <a href="./pages/blog.html"></a>
+                            <img
+                                src="./img/images/main/last-news/last-news--3.png"
+                                alt="image"
+                                class="last-news__card-img"
+                            />
+                            <h3 class="last-news__card-title">
+                                <span class="span-block"
+                                    >Масштабное обновление каталога</span
+                                >
+                                инструментов
+                            </h3>
+
+                            <p class="last-news__card-text">
+                                <span class="span-block">
+                                    С радостью сообщаем вам о крупном пополнении
+                                </span>
+                                нашего каталога инструментов.
+                            </p>
+
+                            <p class="last-news__card-date">5 Августа 2023</p>
+                        </article>
+                        <article class="last-news__card">
+                            <a href="./pages/blog.html"></a>
+                            <img
+                                src="./img/images/main/last-news/last-news--4.png"
+                                alt="image"
+                                class="last-news__card-img"
+                            />
+                            <h3 class="last-news__card-title">
+                                <span class="span-block"
+                                    >Масштабное обновление каталога</span
+                                >
+                                инструментов
+                            </h3>
+
+                            <p class="last-news__card-text">
+                                <span class="span-block">
+                                    С радостью сообщаем вам о крупном пополнении
+                                </span>
+                                нашего каталога инструментов.
+                            </p>
+
+                            <p class="last-news__card-date">5 Августа 2023</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="logo">
+                        <a href="./pages/404.html"
+                            ><img src="./img/icons/logo.svg" alt=""
+                        /></a>
+                    </div>
+
+                    <p class="footer--hide">ООО «Стройоптторг»</p>
+
+                    <p class="footer--hide">
+                        <span class="span-block">ИНН: 0901051787</span> КПП
+                        090101001
+                    </p>
+
+                    <p>
+                        <span class="span-block">Email</span>
+                        <a href="./pages/404.html" class="footer__top-email">
+                            info@stroiopttorg.ru
+                        </a>
+                    </p>
+
+                    <p>
+                        <span class="span-block footer__top--bold">
+                            8 800 444 00 65
+                        </span>
+
+                        Ежедневно, с 8:00 до 18:00
+                    </p>
+
+                    <a href="./pages/making-an-order.html" class="footer__top-btn">ЗАКАЗАТЬ ЗВОНОК</a>
+                </div>
+
+                <div class="footer__middle">
+                    <div class="footer__middle-information">
+                        <h3 class="footer__middle-information-title">
+                            Информация
+                        </h3>
+                        <nav class="nav">
+                            <ul class="nav__ul">
+                                <li class="nav__li">
+                                    <a href="./pages/about-company.html">О компании</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/payment.html">Оплата</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/delivery.html">Доставка</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/refund.html">Возрат</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/refund.html">Возраты</a>
+                                </li>
+                            </ul>
+
+                            <ul class="nav__ul">
+                                <li class="nav__li">
+                                    <a href="./pages/question.html">Вопрос-ответ </a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/blog.html">Новости</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/contacts.html">Контакты</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/personal-account.html">Вход \ Регистрация</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/actions.html">Все акции</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer__middle-catalog footer--hide-adaptive">
+                        <h3 class="footer__middle-catalog-title">Каталог</h3>
+                        <nav class="nav">
+                            <ul class="nav__ul">
+                                <li class="nav__li">
+                                    <a href="./pages/404.html">Общестроительные материалы</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/404.html">Все для сауны и бани</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/404.html">Инструмент</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/404.html">Отделочные материалы</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/404.html"
+                                        >Товары для дома, сада и огорода</a
+                                    >
+                                </li>
+                            </ul>
+
+                            <ul class="nav__ul footer--hide">
+                                <li class="nav__li">
+                                    <a href="./pages/404.html">Электротовары </a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/404.html">Сантехника</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/404.html">Столярные изделия</a>
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/404.html"
+                                        ><span class="span-block"
+                                            >Спецодежда и средства</span
+                                        >
+                                        индивидуальной пожарной защиты</a
+                                    >
+                                </li>
+                            </ul>
+                            <ul class="nav__ul">
+                                <li class="nav__li">
+                                    <a href="./pages/404.html"
+                                        ><span class="span-block">
+                                            Водо-газоснабжение,</span
+                                        >
+                                        отопление, вентиляция</a
+                                    >
+                                </li>
+                                <li class="nav__li">
+                                    <a href="./pages/404.html"
+                                        ><span class="span-block"
+                                            >Метизные, такелажные и
+                                            скобяные</span
+                                        >
+                                        изделия</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p class="footer--hide">
+                        <span class="span-block">Мы принимаем</span> к оплате:
+                    </p>
+                    <div class="banks">
+                        <a href="./pages/404.html"
+                            ><img src="./img/icons/Visa.svg" alt="visa"
+                        /></a>
+                        <a href="./pages/404.html"
+                            ><img
+                                src="./img/icons/mastercard.svg"
+                                alt="mastercard"
+                        /></a>
+                        <a href="./pages/404.html"
+                            ><img
+                                src="./img/icons/sber-bank.svg"
+                                alt="sber-bank"
+                        /></a>
+                        <a href="./pages/404.html"
+                            ><img src="./img/icons/Mir.svg" alt="Mir"
+                        /></a>
+                        <a href="./pages/404.html"
+                            ><img src="./img/icons/Xalva.svg" alt="Xalva"
+                        /></a>
+                        <a href="./pages/404.html"
+                            ><img src="./img/icons/Tinkoff.svg" alt="Tinkoff"
+                        /></a>
+                    </div>
+                    <form class="footer__bottom-form">
+                        <input
+                            type="text"
+                            placeholder="Ваш email"
+                            class="footer__bottom-input"
+                        />
+                        <button type="submit" class="footer__bottom-button">
+                            <img src="./img/icons/send.svg" alt="send" />
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__policy">
+                    <p>© 2024 CodeCultis</p>
+                    <p>Created by Daniyal</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

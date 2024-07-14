@@ -1,0 +1,368 @@
+@import "../scss-utils/variables", "../scss-utils/mixin";
+
+.header__adaptive {
+    display: none;
+}
+
+.header {
+    margin-bottom: $margin-small;
+    &__top {
+        padding: $padding-xsmall 0;
+        margin-bottom: $margin-small;
+        border-bottom: 1px solid #ebeef0;
+        &--wrp {
+            @include flex-row();
+        }
+
+        &-links {
+            @include flex-row-center($gap-small);
+        }
+
+        &-item {
+            color: $clr-eighth-gray;
+            font-size: $font-size-sss;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $clr-eighth-gray;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+
+            &:hover::before {
+                transform: scaleX(1);
+            }
+        }
+
+        &-about {
+            @include flex-row-center($gap-xxsmall);
+            &-schedule {
+                color: $clr-ninth-gray;
+                font-size: $font-size-ssss;
+            }
+            &-number {
+                color: $clr-black;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .header__bottom {
+        .container {
+            .header--wrapper {
+                @include flex-row();
+                .search {
+                    &__form {
+                        position: relative;
+                        margin: 0 auto;
+                    }
+
+                    &__input {
+                        width: 66rem;
+                        height: 4.6rem;
+                        padding-left: $padding-xxsmall;
+                        border-radius: $radius-small;
+                        border: 0.4rem solid $clr-primary-blue;
+                        outline: none;
+                        color: $clr-tenth-gray;
+                        border-radius: $radius-xxxsmall;
+                        -webkit-border-radius: $radius-small;
+                        -moz-border-radius: $radius-small;
+                        -ms-border-radius: $radius-small;
+                        -o-border-radius: $radius-small;
+                    }
+
+                    &__button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 5.6rem;
+                        height: 4.6rem;
+                        border: none;
+                        background: $clr-primary-blue;
+                        border-radius: 0 0.5rem 0.5rem 0;
+                        cursor: pointer;
+                        -webkit-border-radius: 0 0.5rem 0.5rem 0;
+                        -moz-border-radius: 0 0.5rem 0.5rem 0;
+                        -ms-border-radius: 0 0.5rem 0.5rem 0;
+                        -o-border-radius: 0 0.5rem 0.5rem 0;
+                        transition: $transition-medium;
+                        & img:hover {
+                            animation: shake 0.5s;
+                        }
+                    }
+                }
+                .header__bottom-links {
+                    @include flex-row-center($gap-small);
+                }
+                .header__bottom-item {
+                    @include flex-column-center;
+                    color: $clr-eleventh-gray;
+                    & img:hover {
+                        animation: shake 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+    .header__adaptive {
+        display: initial;
+        padding: 1.3rem;
+
+        &-top {
+            padding-bottom: $padding-xsmall;
+            border-bottom: 1px solid #ebeef0;
+            margin-bottom: $margin-xxsmall;
+            @include flex-row();
+            &-menu {
+                font-size: $font-size-s;
+                color: $clr-primary-black;
+            }
+
+            &-about {
+                @include flex-row();
+                gap: $gap-xxsmall;
+
+                &-schedule {
+                    color: $clr-third-gray;
+                }
+
+                &-number {
+                    color: $clr-black;
+                    font-weight: 550;
+                }
+            }
+        }
+
+        &-middle {
+            margin-bottom: $margin-xsmall;
+            @include flex-row();
+
+            &-links {
+                @include flex-row-center($gap-xsmall);
+            }
+
+            &-item {
+                @include flex-column-center();
+                font-size: $font-size-sss;
+                color: $clr-eighteenth-gray;
+            }
+        }
+
+        &-bottom {
+            @include flex-row();
+            .search {
+                &__form {
+                    position: relative;
+                    margin: 0 auto;
+                }
+
+                &__input {
+                    width: 54.9rem;
+                    height: 5.2rem;
+                    padding-left: $padding-xxsmall;
+                    border-radius: $radius-small;
+                    border: 0.4rem solid $clr-primary-blue;
+                    outline: none;
+                    color: $clr-tenth-gray;
+                    border-radius: $radius-xxxsmall;
+                    -webkit-border-radius: $radius-small;
+                    -moz-border-radius: $radius-small;
+                    -ms-border-radius: $radius-small;
+                    -o-border-radius: $radius-small;
+                }
+
+                &__button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 5.6rem;
+                    height: 5.2rem;
+                    border: none;
+                    background: $clr-primary-blue;
+                    border-radius: 0 0.5rem 0.5rem 0;
+                    cursor: pointer;
+                    -webkit-border-radius: 0 0.5rem 0.5rem 0;
+                    -moz-border-radius: 0 0.5rem 0.5rem 0;
+                    -ms-border-radius: 0 0.5rem 0.5rem 0;
+                    -o-border-radius: 0 0.5rem 0.5rem 0;
+                    transition: $transition-medium;
+                    & img:hover {
+                        animation: shake 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+    .burger {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+    }
+    .burger::before,
+    .burger::after {
+        content: "";
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #000;
+    }
+    .burger::before {
+        top: 0;
+        box-shadow: 0 11px 0 #000;
+        transition:
+            box-shadow 0.3s 0.15s,
+            top 0.3s 0.15s,
+            transform 0.3s;
+    }
+    .burger::after {
+        bottom: 0;
+        transition:
+            bottom 0.3s 0.15s,
+            transform 0.3s;
+    }
+    .burger-checkbox:checked + .burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+        transition:
+            box-shadow 0.15s,
+            top 0.3s,
+            transform 0.3s 0.15s;
+        z-index: 2;
+    }
+    .burger-checkbox:checked + .burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition:
+            bottom 0.3s,
+            transform 0.3s 0.15s;
+    }
+    .menu-list {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: grid;
+        gap: 12px;
+        padding: 42px 0;
+        margin: 0;
+        background: $clr-white;
+        list-style-type: none;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        width: 200px;
+        z-index: 1;
+    }
+    .menu-item {
+        display: block;
+        padding: 8px;
+        color: $clr-third-gray;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .menu-item:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    .burger-checkbox:checked ~ .menu-list {
+        transform: translateX(0);
+    }
+
+    .header--hide {
+        display: none;
+    }
+
+    .header__adaptive-middle {
+        &-item img {
+            width: 35px;
+        }
+
+        &-links {
+            gap: 0.6rem;
+        }
+    }
+
+    .header__adaptive-bottom {
+        .search {
+            &__form {
+                position: relative;
+                margin: 0 auto;
+            }
+
+            &__input {
+                width: 55rem;
+                height: 4.9rem;
+                padding-left: $padding-xxsmall;
+                border-radius: $radius-small;
+                border: 0.4rem solid $clr-primary-blue;
+                outline: none;
+                color: $clr-tenth-gray;
+                border-radius: $radius-xxxsmall;
+                -webkit-border-radius: $radius-small;
+                -moz-border-radius: $radius-small;
+                -ms-border-radius: $radius-small;
+                -o-border-radius: $radius-small;
+            }
+
+            &__button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 4.2rem;
+                height: 4.9rem;
+                border: none;
+                background: $clr-primary-blue;
+                border-radius: 0 0.5rem 0.5rem 0;
+                cursor: pointer;
+                -webkit-border-radius: 0 0.5rem 0.5rem 0;
+                -moz-border-radius: 0 0.5rem 0.5rem 0;
+                -ms-border-radius: 0 0.5rem 0.5rem 0;
+                -o-border-radius: 0 0.5rem 0.5rem 0;
+                transition: $transition-medium;
+                & img:hover {
+                    animation: shake 0.5s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header__adaptive-bottom {
+        .search {
+            &__input {
+                width: 17.7rem;
+            }
+        }
+    }
+}

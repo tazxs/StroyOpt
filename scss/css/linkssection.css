@@ -1,0 +1,185 @@
+@media (max-width: 360px) {
+  .container {
+    max-width: 330px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 718px;
+  }
+}
+@-webkit-keyframes opac {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes opac {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes line {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100rem);
+            transform: translateX(-100rem);
+  }
+}
+@keyframes line {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100rem);
+            transform: translateX(-100rem);
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-2deg) scale(1.02);
+            transform: rotate(-2deg) scale(1.02);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1.03);
+            transform: rotate(0deg) scale(1.03);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-2deg) scale(1.02);
+            transform: rotate(-2deg) scale(1.02);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1.03);
+            transform: rotate(0deg) scale(1.03);
+  }
+}
+@-webkit-keyframes elastic {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+            transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+            transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+            transform: scaleX(1.15) scaleY(0.85);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes elastic {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+            transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+            transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+            transform: scaleX(1.15) scaleY(0.85);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.link__section .link__wrapper .link__heading {
+  padding: 1.8rem 0;
+  margin-bottom: 3.2rem;
+}
+.link__section .link__wrapper .link__heading .link__heading-content {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #91969d;
+  font-size: 1.5rem;
+}
+.link__section .link__wrapper .link__heading .link__heading-content span {
+  margin-right: 1.5rem;
+  color: #2C333D;
+}
+.link__section .link__wrapper .link__heading .link__heading-content .span2 {
+  margin-left: 1.5rem;
+  color: #91969d;
+}
+.link__section .link__wrapper .link__title {
+  margin-bottom: 9rem;
+}
+.link__section .link__wrapper .link__title .link__title-content {
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+
+@media (max-width: 375px) {
+  .link__section .link__wrapper .link__title .link__title-content {
+    font-size: 2.2rem;
+  }
+}

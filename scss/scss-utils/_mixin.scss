@@ -1,0 +1,351 @@
+@mixin respond-to($media) {
+    @if $media== "phone" {
+        @media (max-width: 375px) {
+            @content;
+        }
+    }
+}
+
+@mixin click() {
+    position: relative;
+    top: 0.1rem;
+}
+
+@mixin flex-row($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-row-center($gap: 0) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin inline-flex-row-center($gap: 0) {
+    display: inline-flex;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin flex-column($gap: 0, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin flex-column-center() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin btn(
+    $first-padding: 0,
+    $second-padding: 0,
+    $border-radius: 0,
+    $background-color: $clr-white,
+    $color: $clr-black,
+    $font-weight: 400,
+    $font-size: 1.6rem,
+    $border: 0
+) {
+    padding: $first-padding $second-padding;
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+    background-color: $background-color;
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    border: $border;
+}
+
+// Titles
+
+@mixin h1($color: $clr-third-gray) {
+    font-size: $font-size-zxl;
+    font-weight: 700;
+    line-height: 5.4rem;
+    color: $color;
+}
+
+@mixin h2($color: $clr-third-gray) {
+    font-size: $font-size-l;
+    font-weight: 700;
+    line-height: 3.1rem;
+    color: $color;
+}
+
+@mixin h3($color: $clr-third-gray) {
+    font-size: $font-size-s;
+    font-weight: 550;
+    line-height: 2.6rem;
+    color: $color;
+}
+
+@mixin h4($color: $clr-black) {
+    font-size: $font-size-xs;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: $color;
+}
+
+@mixin text($color: $clr-third-gray, $fw: 400, $fz: $font-size-s, $line-height: 2.6rem) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $color;
+    line-height: $line-height;
+}
+
+// Animations
+
+@mixin animation-translate-y($hover, $active, $transition: $transition-medium) {
+    transition: $transition;
+    &:hover {
+        transform: translateY($hover);
+    }
+
+    &:active {
+        transform: translateY($active);
+    }
+}
+
+@mixin animation-translate-x($hover, $active, $transition: $transition-fast) {
+    transition: $transition;
+    &:hover {
+        transform: translateX($hover);
+    }
+
+    &:active {
+        transform: translateX($active);
+    }
+}
+
+@mixin animation-color($transition: $transition-medium, $bg-color: $clr-primary-orange, $color: $clr-white) {
+    transition: $transition;
+    &:hover {
+        background-color: $bg-color;
+        color: $color;
+    }
+}
+
+@mixin respond-to($media) {
+    @if $media== "phone" {
+        @media (max-width: 363px) {
+            @content;
+        }
+    } @else if $media== "tablet" {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $media== "laptop" {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+}
+@mixin click() {
+    position: relative;
+    top: 0.1rem;
+}
+
+@mixin flex-row($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-column-reverse() {
+    display: flex;
+    flex-direction: column-reverse;
+}
+@mixin flex-row-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-end() {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin flex-column-center() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-sapce-around() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin flex-sapce-between() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-sapce-bw() {
+    display: flex;
+    justify-content: space-between;
+}
+
+// Title mixins
+
+@mixin title-h1() {
+    font-size: $font-size-xxxl;
+    font-weight: 700;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-l;
+    }
+}
+
+@mixin title-h2() {
+    font-size: $font-size-xxl;
+    font-weight: 700;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-xxm;
+    }
+}
+
+@mixin title-h3() {
+    font-size: $font-size-xl;
+    font-weight: 700;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-xm;
+    }
+}
+
+@mixin title-h4() {
+    font-size: $font-size-l;
+    font-weight: 600;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-m;
+    }
+}
+
+@mixin title-h5() {
+    font-size: $font-size-s;
+    font-weight: 600;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-s;
+    }
+}
+
+@mixin title-h6() {
+    font-size: $font-size-xs;
+    font-weight: 600;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-xs;
+    }
+}
+
+@mixin title-24() {
+    font-size: $font-size-m;
+    font-weight: 600;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-s;
+    }
+}
+
+@mixin title-20m() {
+    font-size: $font-size-s;
+    font-weight: 500;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-xs;
+    }
+}
+
+@mixin title-16sb() {
+    font-size: $font-size-ss;
+    font-weight: 600;
+    font-family: $second-family;
+    line-height: 130%;
+    @include respond-to("phone") {
+        font-size: $font-size-ss;
+    }
+}
+
+//Text nixins
+
+@mixin text-20m() {
+    font-size: $font-size-s;
+    font-weight: 500;
+    font-family: $first-family;
+    line-height: 160%;
+    @include respond-to("phone") {
+        font-size: $font-size-xs;
+    }
+}
+
+@mixin text-20r() {
+    font-size: $font-size-s;
+    font-family: $first-family;
+    line-height: 140%;
+    @include respond-to("phone") {
+        font-size: $font-size-xs;
+    }
+}
+
+@mixin text-16sb() {
+    font-size: $font-size-ss;
+    font-weight: 600;
+    font-family: $first-family;
+    line-height: 140%;
+}
+
+@mixin menu-16m() {
+    font-size: $font-size-ss;
+    font-weight: 500;
+    font-family: $first-family;
+    line-height: 160%;
+}
+
+@mixin text-16r() {
+    font-size: $font-size-ss;
+    font-weight: 500;
+    font-family: $first-family;
+    line-height: 160%;
+}
+
+@mixin text-14sb() {
+    font-size: $font-size-sss;
+    font-weight: 600;
+    font-family: $first-family;
+    line-height: 160%;
+}
+
+@mixin btn-sb() {
+    font-size: $font-size-s;
+    font-weight: 600;
+    font-family: $first-family;
+    line-height: 140%;
+}

@@ -1,0 +1,43 @@
+@import "../scss-utils/variables", "../scss-utils/mixin";
+
+.popular-brands {
+    margin-bottom: $margin-xmedium;
+    &__title {
+        @include h2();
+        margin-bottom: $margin-regular;
+    }
+
+    &__wrapper {
+        position: relative;
+        @include flex-row();
+        .owl-btn {
+            padding: 1.6rem;
+            top: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popular-brands {
+        .owl-btn {
+            padding: 1.2rem;
+        }
+    }
+
+    .previous {
+        left: -1%;
+    }
+
+    .next {
+        right: -1%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .popular-brands__wrapper {
+        a img {
+            max-width: none;
+        }
+    }
+}
+

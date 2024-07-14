@@ -1,0 +1,532 @@
+@import "../scss-utils/mixin", "../scss-utils/variables";
+
+.added-btn {
+    color: $clr-primary-blue;
+    background-color: $clr-white;
+    border: 1px solid $clr-primary-blue;
+}
+
+.owl-btn {
+    color: $clr-black;
+    display: inline-block;
+    padding: 2.3rem;
+    background-color: $clr-white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 40%;
+
+    transition: $transition-medium;
+    &:hover {
+        background-color: $clr-primary-black;
+        color: $clr-white;
+    }
+}
+
+.previous {
+    left: -2%;
+}
+
+.next {
+    right: -2%;
+}
+
+.header__top-about-button {
+    @include btn(
+        $padding-zxxsmall,
+        $padding-zxxsmall,
+        $radius-xxxsmall,
+        $clr-fifth-white,
+        $clr-fifth-blue,
+        700,
+        $font-size-ssss
+    );
+    animation: animate_grow 2s infinite;
+    @include animation-color($transition-medium, $clr-fifth-blue);
+    &:hover {
+        animation: none;
+    }
+}
+
+.header__bottom-catalog-btn {
+    @include btn(
+        $padding-xsmall,
+        $padding-small,
+        $radius-xsmall,
+        $clr-primary-blue,
+        $clr-primary-white,
+        700,
+        $font-size-ssss
+    );
+    @include inline-flex-row-center($gap-xxsmall);
+    @include animation-translate-y(-0.5rem, 0);
+}
+
+.power-tool__container-btn {
+    @include btn(2.4rem, $padding-small, $radius-xsmall, $clr-primary-black, $clr-white, 700, $font-size-sss);
+    @include inline-flex-row-center($gap-xsmall);
+    transition: $transition-medium;
+    &:hover {
+        background-color: $clr-primary-orange;
+    }
+}
+
+.bestsellers {
+    &__types {
+        &-item {
+            transition: $transition-fast;
+            @include btn(
+                $padding-xxsmall,
+                $padding-xxsmall,
+                $radius-xxsmall,
+                $clr-white,
+                $clr-secondary-gray,
+                550,
+                $font-size-sss,
+                1px solid #f2f4f5
+            );
+
+            &-active {
+                color: $clr-primary-blue;
+                background-color: $clr-seventh-white;
+            }
+
+            &:hover {
+                color: $clr-primary-blue;
+                background-color: $clr-seventh-white;
+            }
+        }
+    }
+}
+
+.popular-brands__item {
+    transition: $transition-fast;
+    @include btn(
+        $padding-xsmall,
+        $padding-small,
+        $radius-xsmall,
+        $clr-white,
+        $clr-black,
+        400,
+        1.6rem,
+        1px solid #f2f4f5
+    );
+    &:hover {
+        -webkit-box-shadow: 10px 4px 22px -1px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 10px 4px 22px -1px rgba(0, 0, 0, 0.12);
+        box-shadow: 10px 4px 22px -1px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.best-deals {
+    &__types {
+        &-item {
+            transition: $transition-fast;
+            @include btn(
+                $padding-xxsmall,
+                $padding-xxsmall,
+                $radius-xxsmall,
+                $clr-white,
+                $clr-secondary-gray,
+                550,
+                $font-size-sss,
+                1px solid #f2f4f5
+            );
+
+            &-active {
+                color: $clr-primary-blue;
+                background-color: $clr-seventh-white;
+            }
+
+            &:hover {
+                color: $clr-primary-blue;
+                background-color: $clr-seventh-white;
+            }
+        }
+    }
+}
+
+.about-shop__btn {
+    @include btn(2.4rem, 2.7rem, $radius-xsmall, $clr-primary-black, $clr-white, 700, $font-size-sss);
+    @include animation-color($transition-medium, $clr-primary-orange);
+}
+
+.footer__top-btn {
+    @include btn(
+        1.8rem,
+        4.7rem,
+        $radius-xxsmall,
+        $clr-third-white,
+        $clr-seventeenth-gray,
+        700,
+        $font-size-sss,
+        1px solid #ee0906
+    );
+    @include animation-color($transition-medium, $clr-primary-orange, $clr-white);
+}
+
+@media screen and (max-width: 768px) {
+    .header__adaptive-top-about-button {
+        @include btn(
+            $padding-zxxsmall,
+            $padding-zxxsmall,
+            $radius-xxxsmall,
+            $clr-fifth-white,
+            $clr-fifth-blue,
+            700,
+            $font-size-ssss
+        );
+    }
+
+    .header__adaptive-bottom-catalog-btn {
+        @include btn(
+            $padding-xsmall,
+            $padding-small,
+            $radius-xsmall,
+            $clr-primary-blue,
+            $clr-primary-white,
+            700,
+            $font-size-ssss
+        );
+        @include inline-flex-row-center($gap-xxsmall);
+    }
+
+    .owl-btn {
+        padding: 1.5rem;
+    }
+
+    .footer__top-btn {
+        padding: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .owl-btn {
+        display: none;
+    }
+
+    .bestsellers {
+        &__types {
+            overflow-y: hidden;
+            &-item {
+                padding: 1.4rem;
+            }
+        }
+        &__cards {
+            overflow-y: hidden;
+        }
+    }
+}
+
+@import "../scss-utils/variables";
+@import "../scss-utils/mixin";
+
+.btn1 {
+    padding: 2.5rem 3.2rem;
+    background-color: $clr-primary-blue;
+    border-radius: $radius-xsmall;
+    color: $clr-white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: $first-family;
+    transition: $transition-fast;
+    text-align: center;
+    &:hover {
+        color: $clr-third-white;
+        background-color: $clr-secondary-blue;
+        transform: scale(1.1);
+    }
+}
+.btn2 {
+    padding: 1.7rem 2.7rem;
+    background-color: #f6f8fb;
+    border-radius: $radius-xsmall;
+    color: $clr-secondary-blue;
+    font-size: 1.5rem;
+    font-weight: 550;
+    font-family: $first-family;
+    transition: $transition-fast;
+    text-align: center;
+    &:hover {
+        color: $clr-third-white;
+        background-color: $clr-secondary-blue;
+        transform: scale(1.1);
+    }
+}
+.btn3 {
+    padding: 1.9rem 2.4rem;
+    border: 1px solid #dfdfdf;
+    border-radius: $radius-xsmall;
+    color: $clr-black;
+    font-size: 1.5rem;
+    font-family: $first-family;
+    transition: $transition-fast;
+    &:hover {
+        color: $clr-white;
+        background-color: $clr-black;
+        transform: scale(1.1);
+    }
+}
+
+@import "../scss-utils/variables";
+@import "../scss-utils/mixin";
+
+.btn {
+    padding: 2.5rem 3.2rem;
+    border-radius: $radius-xsmall;
+    background: $clr-primary-blue;
+    font-size: $font-size-sss;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+    color: $clr-white;
+    transition: $transition-fast;
+    &:hover {
+        box-shadow: $btn-shadow;
+        transform: scale(1.05) translateY(-0.2rem);
+    }
+    &:active {
+        transform: scale(1) translateY(0.2rem);
+        @include click();
+    }
+}
+
+.btn_order {
+    display: block;
+    padding: 1.4rem;
+    text-align: center;
+    background: #f6f8fb;
+    font-size: $font-size-xss;
+    font-weight: 500;
+    color: $clr-secondary-blue;
+}
+
+.added-btn {
+    color: $clr-primary-blue;
+    background-color: $clr-white;
+    border: 1px solid $clr-primary-blue;
+}
+
+.owl-btn {
+    color: $clr-black;
+    display: inline-block;
+    padding: 2.3rem;
+    background-color: $clr-white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 40%;
+
+    transition: $transition-medium;
+    &:hover {
+        background-color: $clr-primary-black;
+        color: $clr-white;
+    }
+}
+
+.previous {
+    left: -2%;
+}
+
+.next {
+    right: -2%;
+}
+
+.header__top-about-button {
+    @include btn(
+        $padding-zxxsmall,
+        $padding-zxxsmall,
+        $radius-xxxsmall,
+        $clr-fifth-white,
+        $clr-fifth-blue,
+        700,
+        $font-size-ssss
+    );
+    animation: animate_grow 2s infinite;
+    @include animation-color($transition-medium, $clr-fifth-blue);
+    &:hover {
+        animation: none;
+    }
+}
+
+.header__bottom-catalog-btn {
+    @include btn(
+        $padding-xsmall,
+        $padding-small,
+        $radius-xsmall,
+        $clr-primary-blue,
+        $clr-primary-white,
+        700,
+        $font-size-ssss
+    );
+    @include inline-flex-row-center($gap-xxsmall);
+    @include animation-translate-y(-0.5rem, 0);
+}
+
+.power-tool__container-btn {
+    @include btn(2.4rem, $padding-small, $radius-xsmall, $clr-primary-black, $clr-white, 700, $font-size-sss);
+    @include inline-flex-row-center($gap-xsmall);
+    transition: $transition-medium;
+    &:hover {
+        background-color: $clr-primary-orange;
+    }
+}
+
+.bestsellers {
+    &__types {
+        &-item {
+            transition: $transition-fast;
+            @include btn(
+                $padding-xxsmall,
+                $padding-xxsmall,
+                $radius-xxsmall,
+                $clr-white,
+                $clr-secondary-gray,
+                550,
+                $font-size-sss,
+                1px solid #f2f4f5
+            );
+
+            &-active {
+                color: $clr-primary-blue;
+                background-color: $clr-seventh-white;
+            }
+
+            &:hover {
+                color: $clr-primary-blue;
+                background-color: $clr-seventh-white;
+            }
+        }
+    }
+}
+
+.popular-brands__item {
+    transition: $transition-fast;
+    @include btn(
+        $padding-xsmall,
+        $padding-small,
+        $radius-xsmall,
+        $clr-white,
+        $clr-black,
+        400,
+        1.6rem,
+        1px solid #f2f4f5
+    );
+    &:hover {
+        -webkit-box-shadow: 10px 4px 22px -1px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 10px 4px 22px -1px rgba(0, 0, 0, 0.12);
+        box-shadow: 10px 4px 22px -1px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.best-deals {
+    &__types {
+        &-item {
+            transition: $transition-fast;
+            @include btn(
+                $padding-xxsmall,
+                $padding-xxsmall,
+                $radius-xxsmall,
+                $clr-white,
+                $clr-secondary-gray,
+                550,
+                $font-size-sss,
+                1px solid #f2f4f5
+            );
+
+            &-active {
+                color: $clr-primary-blue;
+                background-color: $clr-seventh-white;
+            }
+
+            &:hover {
+                color: $clr-primary-blue;
+                background-color: $clr-seventh-white;
+            }
+        }
+    }
+}
+
+.about-shop__btn {
+    @include btn(2.4rem, 2.7rem, $radius-xsmall, $clr-primary-black, $clr-white, 700, $font-size-sss);
+    @include animation-color($transition-medium, $clr-primary-orange);
+}
+
+.footer__top-btn {
+    @include btn(
+        1.8rem,
+        4.7rem,
+        $radius-xxsmall,
+        $clr-third-white,
+        $clr-seventeenth-gray,
+        700,
+        $font-size-sss,
+        1px solid #ee0906
+    );
+    @include animation-color($transition-medium, $clr-primary-orange, $clr-white);
+}
+
+@media screen and (max-width: 768px) {
+    .header__adaptive-top-about-button {
+        @include btn(
+            $padding-zxxsmall,
+            $padding-zxxsmall,
+            $radius-xxxsmall,
+            $clr-fifth-white,
+            $clr-fifth-blue,
+            700,
+            $font-size-ssss
+        );
+    }
+
+    .header__adaptive-bottom-catalog-btn {
+        @include btn(
+            $padding-xsmall,
+            $padding-small,
+            $radius-xsmall,
+            $clr-primary-blue,
+            $clr-primary-white,
+            700,
+            $font-size-ssss
+        );
+        @include inline-flex-row-center($gap-xxsmall);
+    }
+
+    .owl-btn {
+        padding: 1.5rem;
+    }
+
+    .footer__top-btn {
+        padding: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .owl-btn {
+        display: none;
+    }
+
+    .bestsellers {
+        &__types {
+            overflow-y: hidden;
+            &-item {
+                padding: 1.4rem;
+            }
+        }
+        &__cards {
+            overflow-y: hidden;
+        }
+    }
+}

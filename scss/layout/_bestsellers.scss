@@ -1,0 +1,37 @@
+@import "../scss-utils/variables",
+        "../scss-utils/mixin";
+
+.bestsellers {
+    margin-bottom: $margin-large;
+    &__title {
+        @include h2;
+        margin-bottom: $margin-small;
+    }
+
+    &__types {
+        @include flex-row-center($gap-xxsmall);
+        margin-bottom: $margin-xmedium;
+    }
+
+    .owl-adaptive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .previous {
+        left: -5%;
+    }
+
+    .bestsellers {
+        .owl-adaptive {
+            display: initial;
+        }
+    }
+
+    .next {
+        right: -5%;
+    }
+
+    
+}

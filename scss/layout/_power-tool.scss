@@ -1,0 +1,102 @@
+@import "../scss-utils/variables", "../scss-utils/mixin";
+
+.power-tool {
+    &__img-adaptive-tel {
+        display: none;
+    }
+
+    &__img-adaptive {
+        display: none;
+    }
+
+    margin-bottom: $margin-xmedium;
+    position: relative;
+    .next {
+        right: 6%;
+    }
+
+    .previous {
+        left: 6%;
+    }
+
+    .page-listing {
+        position: absolute;
+        top: 85%;
+        left: 75.4rem;
+    }
+
+    &__content {
+        padding: 12.3rem 6rem;
+        position: absolute;
+        top: 0;
+
+        &-title {
+            @include h1();
+            margin-bottom: $margin-xsmall;
+        }
+
+        &-text {
+            @include text();
+            margin-bottom: $margin-medium;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .power-tool {
+        .page-listing {
+            display: none;
+        }
+
+        &__img-adaptive {
+            display: initial;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__content {
+            position: absolute;
+            padding: 6.4rem $padding-small;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .previous {
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .power-tool {
+        
+        .owl-btn {
+            display: none;
+        }
+
+        &__content {
+            text-align: center;
+            padding-top: 19.7rem;
+            padding: 19.7rem 3rem;
+            &-title {
+                font-size: 3rem;
+            }
+        }
+
+        &--hide-tel {
+            display: none;
+        }
+
+        &__img-adaptive {
+            display: none;
+        }
+
+        &__img-adaptive-tel {
+            display: initial;
+        }
+    }
+}

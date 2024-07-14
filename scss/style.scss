@@ -1,0 +1,18 @@
+@import "./base/reset",
+        "./components/btn",
+        "./components/card",
+        "./scss-utils/mixin",
+        "./scss-utils/variables",
+        "./layout/header",
+        "./layout/power-tool",
+        "./layout/assortment",
+        "./layout/bestsellers",
+        "./layout/popular-brands",
+        "./layout/best-deals",
+        "./layout/about-shop",
+        "./layout/last-news",
+        "./layout/footer";
+
+.main {
+    margin-bottom: $margin-large;
+}

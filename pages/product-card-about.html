@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/product-card-about.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Карточка товара</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top--wrp">
+                    <nav class="header__top-links">
+                        <a href="../pages/about-company.html" class="header__top-item">О компании</a>
+                        <a href="../pages/payment.html" class="header__top-item">Оплата</a>
+                        <a href="../pages/delivery.html" class="header__top-item">Доставка</a>
+                        <a href="../pages/refund.html" class="header__top-item">Возрат </a>
+                        <a href="../pages/reviews.html" class="header__top-item">Отзывы</a>
+                        <a href="../pages/question.html" class="header__top-item"
+                            >Вопрос-ответ</a
+                        >
+                        <a href="../pages/blog.html" class="header__top-item">Новости</a>
+                        <a href="../pages/contacts.html" class="header__top-item">Контакты</a>
+                    </nav>
+                    <div class="header__top-about">
+                        <p class="header__top-about-schedule">
+                            Ежедневно, с 8:00 до 18:00
+                        </p>
+                        <p class="header__top-about-number">
+                            8 800 444 00 65
+                        </p>
+                        <a href="../pages/making-an-order.html" class="header__top-about-button btn"
+                            >ЗАКАЗАТЬ ЗВОНОК</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header--wrapper">
+                    <div class="logo">
+                        <a href="../index.html"
+                            ><img src="../img/icons/logo.svg" alt="logo"
+                        /></a>
+                    </div>
+                    <a href="../pages/products-catalog.html" class="header__bottom-catalog-btn"
+                        ><img
+                            src="../img/icons/Parallel.svg"
+                            alt="parallel"
+                        />КАТАЛОГ</a
+                    >
+                    <div class="search">
+                        <form action="../pages/search-results.html" method="get" class="search__form">
+                            <input
+                                name="s"
+                                placeholder="Найти среди 50000 товаров. Например: Дрель Bosch"
+                                type="search"
+                                class="search__input"
+                            />
+                            <button type="submit" class="search__button">
+                                <img
+                                    src="../img/icons/search.svg"
+                                    alt="search"
+                                />
+                            </button>
+                        </form>
+                    </div>
+
+                    <nav class="header__bottom-links">
+                        <a href="../pages/actions.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/gift.svg"
+                                    alt="gift" /></span
+                            >Все акции</a
+                        >
+                        <a href="../pages/personal-account.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/login.svg"
+                                    alt="gift" /></span
+                            >Войти</a
+                        >
+                        <a href="../pages/comparisons.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/Comparison.svg"
+                                    alt="gift" /></span
+                            >Сравнение</a
+                        >
+                        <a href="../pages/favourite.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/heart.svg"
+                                    alt="gift" /></span
+                            >Избранное</a
+                        >
+                        <a href="../pages/cart.html" class="header__bottom-item"
+                            ><span class="span-block"
+                                ><img
+                                    src="../img/icons/cart.svg"
+                                    alt="gift" /></span
+                            >Корзина</a
+                        >
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="header__adaptive">
+        <div class="container">
+            <div class="header__adaptive-top">
+                <div class="menu">
+                    <input
+                        type="checkbox"
+                        id="burger-checkbox"
+                        class="burger-checkbox"
+                    />
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li><a href="../pages/about-company.html" class="menu-item">О КОМПАНИИ</a></li>
+                        <li></li>
+                        <li><a href="../pages/payment.html" class="menu-item">ОПЛАТА</a></li>
+                        <li></li>
+                        <li><a href="../pages/delivery.html" class="menu-item">ДОСТАВКА</a></li>
+                        <li></li>
+                        <li><a href="../pages/refund.html" class="menu-item">ВОЗРАТ</a></li>
+                        <li></li>
+                        <li><a href="../pages/reviews.html" class="menu-item">ОТЗЫВЫ</a></li>
+                        <li></li>
+                        <li><a href="../pages/question.html" class="menu-item">ВОПРОС-ОТВЕТ</a></li>
+                        <li></li>
+                        <li><a href="../pages/blog.html" class="menu-item">НОВОСТИ</a></li>
+                        <li></li>
+                        <li><a href="../pages/contacts.html" class="menu-item">КОНТАКТЫ</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="header__adaptive-top-about">
+                    <p
+                        class="header__adaptive-top-about-schedule header--hide"
+                    >
+                        Ежедневно, с 8:00 до 18:00
+                    </p>
+                    <p class="header__adaptive-top-about-number">
+                        8 800 444 00 65
+                    </p>
+                    <a href="../pages/search-results.html" class="header__adaptive-top-about-button"
+                        >ЗАКАЗАТЬ ЗВОНОК</a
+                    >
+                </div>
+            </div>
+            <div class="header__adaptive-middle">
+                <div class="logo">
+                    <a href="../index.html"
+                        ><img src="../img/icons/logo.svg" alt=""
+                    /></a>
+                </div>
+                <nav class="header__adaptive-middle-links">
+                    <a href="../pages/actions.html" class="header__adaptive-middle-item">
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/gift.svg"
+                                alt="gift" /></span
+                        ><span class="header--hide">Все акции</span>
+                    </a>
+                    <a href="../pages/personal-account.html" class="header__adaptive-middle-item">
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/login.svg"
+                                alt="gift" /></span
+                        ><span class="header--hide">Войти</span>
+                    </a>
+                    <a href="../pages/comparisons.html" class="header__adaptive-middle-item">
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/Comparison.svg"
+                                alt="gift" /></span
+                        ><span class="header--hide">Сравнение</span>
+                    </a>
+                    <a href="../pages/favourite.html" class="header__adaptive-middle-item">
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/heart.svg"
+                                alt="gift" /></span
+                        ><span class="header--hide">Избранное</span>
+                    </a>
+                    <a
+                        href="../pages/cart.html"
+                        class="header__adaptive-middle-item header--hide"
+                    >
+                        <span class="span-block"
+                            ><img
+                                src="../img/icons/cart.svg"
+                                alt="gift" /></span
+                        >Корзина
+                    </a>
+                </nav>
+            </div>
+
+            <div class="header__adaptive-bottom">
+                <a href="../pages/products-catalog.html" class="header__adaptive-bottom-catalog-btn"
+                    ><img
+                        src="../img/icons/Parallel.svg"
+                        alt="parallel"
+                    />КАТАЛОГ</a
+                >
+
+                <div class="search">
+                    <form action="../pages/search-results.html" method="get" class="search__form">
+                        <input
+                            name="s"
+                            placeholder="Найти среди 50000 товаров. Например: Дрель Bosch"
+                            type="search"
+                            class="search__input"
+                        />
+                        <button type="submit" class="search__button">
+                            <img
+                                src="../img/icons/search.svg"
+                                alt="search"
+                            />
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="path">
+                <ul class="path_list">
+                    <li class="path_item"><a href="#" class="path_link">Стройоптторг</a></li>
+                    <li class="path_item"><a href="#" class="path_link">Электроинструмент</a></li>
+                    <li class="path_item fill">/</li>
+                    <li class="path_item"><a href="#" class="path_link fill">Дрель-шуруповерт аккумуляторная MAKITA DF
+                            347DWE14 В 1,5 А/ч</a></li>
+                </ul>
+            </div>
+
+            <section class="hero">
+                <h1 class="title-large">
+                    Дрель-шуруповерт аккумуляторная MAKITA DF 347DWE14 В 1,5 А/ч
+                </h1>
+
+                <div class="hero_wrapper">
+                    <div class="hero_left">
+                        <img src="../img/images/Product/Makita-DF-347DWE14-kit.png" alt="картинка">
+                        <img src="../img/images/Product/Makita-DF-347DWE14-top.png" alt="картинка">
+                        <img src="../img/images/Product/Makita-DF-347DWE14-middle.png" alt="картинка">
+                        <img src="../img/images/Product/Makita-DF-347DWE14-behind.png" alt="картинка">
+                        <img src="../img/images/Product/Makita-DF-347DWE14-kits.png" alt="картинка">
+                        <img src="../img/images/Product/Makita-DF-347DWE14-middle-smeared.png" alt="картинка">
+                    </div>
+
+                    <div class="hero_img">
+                        <img src="../img/images/Product/Makita-DF-347DWE14.png" alt="картинка">
+                        <img src="../img/icons/Vector.svg" alt="во весь экран">
+                    </div>
+
+                    <div class="hero_right">
+                        <div class="hero_item">
+                            <p>Тип товара</p>
+                            <span>------------------------------------------</span>
+                            <p>Дрель-шуруповерт</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Бренд</p>
+                            <span>--------------------------------------------------</span>
+                            <p>MAKITA</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Назначение инструмента</p>
+                            <span>--------------------------</span>
+                            <p>профессиональный</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Мощность (Вт)</p>
+                            <span>------------------------------------------</span>
+                            <p>18</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Емкость АКБ (А/ч)</p>
+                            <span>------------------------------------------</span>
+                            <p>1,5</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Крутящий момент макс. (Н/м)</p>
+                            <span>------------------------------------------</span>
+                            <p>30</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Напряжение аккумулятора (В)</p>
+                            <span>------------------------------------------</span>
+                            <p>14,4</p>
+                        </div>
+
+                        <a href="#" class="hero_btn">
+                            Больше характеристик
+                        </a>
+
+                        <div class="hero_block">
+                            <div class="block-item">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <p>Оплата любым удобным способом</p>
+                            </div>
+
+                            <div class="block-item">
+                                <img src="../img/icons/wide-choice.svg" alt="картинка">
+                                <p>Большой выбор товаров в каталоге</p>
+                            </div>
+
+                            <div class="block-item">
+                                <i class="fa-solid fa-cube"></i>
+                                <p>Большой выбор товаров в каталоге</p>
+                            </div>
+
+                            <div class="block-item">
+                                <img src="../img/icons/discount.svg" alt="картинка">
+                                <p>Делаем скидки на крупные покупки</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero_right-2">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>
+                            <img src="../img/icons/check-mark.svg" alt="картинка">
+                            В наличии
+                        </h3>
+
+                        <div class="hero_right-flex">
+                            <h4>12 789 ₽</h4>
+                            <h5>15 999 ₽</h5>
+                            <a href="#" class="button-discount"> -15%</a>
+                        </div>
+
+                        <div class="hero_right-flex-2">
+                            <p>Количество:</p>
+
+                            <a href="#" class="btn-minus">
+                                -
+                            </a>
+
+                            <h6>1</h6>
+
+                            <a href="#" class="btn-plus">
+                                +
+                            </a>
+                        </div>
+
+                        <a href="#" class="button-primary-blue first">
+                            Добавить в корзину
+                        </a>
+
+                        <a href="../pages/makin" class="button-primary-blue">
+                            Купить в 1 клик
+                        </a>
+
+                        <div class="hero_right-bottom">
+                            <a href="#" class="bottom-item">
+                                <img src="../img/icons/heart.svg" alt="❤">
+                                В избранное
+                            </a>
+
+                            <a href="#" class="bottom-item">
+                                <img src="../img/icons/Comparison.svg" alt="❤">
+                                В избранное
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero_wrapper hero_laptop none">
+                    <div class="hero_img">
+                        <img src="../img/images/Product/Makita-DF-347DWE14.png" alt="картинка">
+                        <img src="../img/icons/Vector.svg" alt="во весь экран">
+
+                        <div class="hero_left">
+                            <img src="../img/images/Product/Makita-DF-347DWE14-kit.png" alt="картинка">
+                            <img src="../img/images/Product/Makita-DF-347DWE14-top.png" alt="картинка">
+                            <img src="../img/images/Product/Makita-DF-347DWE14-middle.png" alt="картинка">
+                            <img src="../img/images/Product/Makita-DF-347DWE14-behind.png" alt="картинка">
+                            <img src="../img/images/Product/Makita-DF-347DWE14-kits.png" alt="картинка">
+                            <img src="../img/images/Product/Makita-DF-347DWE14-middle-smeared.png" alt="картинка">
+                        </div>
+                    </div>
+
+                    <div class="hero_right-2">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>
+                            <img src="../img/icons/check-mark.svg" alt="картинка">
+                            В наличии
+                        </h3>
+
+                        <div class="hero_right-flex">
+                            <h4>12 789 ₽</h4>
+                            <h5>15 999 ₽</h5>
+                            <a href="#" class="button-discount"> -15%</a>
+                        </div>
+
+                        <div class="hero_right-flex-2">
+                            <p>Количество:</p>
+
+                            <a href="#" class="btn-minus">
+                                -
+                            </a>
+
+                            <h6>1</h6>
+
+                            <a href="#" class="btn-plus">
+                                +
+                            </a>
+                        </div>
+
+                        <a href="#" class="button-primary-blue first">
+                            Добавить в корзину
+                        </a>
+
+                        <a href="#" class="button-primary-blue">
+                            Купить в 1 клик
+                        </a>
+
+                        <div class="hero_right-bottom">
+                            <a href="#" class="bottom-item">
+                                <img src="../img/icons/heart.svg" alt="❤">
+                                В избранное
+                            </a>
+
+                            <a href="#" class="bottom-item">
+                                <img src="../img/icons/Comparison.svg" alt="❤">
+                                В избранное
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero_block">
+                        <div class="block-item">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <p>Оплата любым удобным способом</p>
+                        </div>
+
+                        <div class="block-item">
+                            <img src="../img/icons/wide-choice.svg" alt="картинка">
+                            <p>Большой выбор товаров в каталоге</p>
+                        </div>
+
+                        <div class="block-item">
+                            <i class="fa-solid fa-cube"></i>
+                            <p>Большой выбор товаров в каталоге</p>
+                        </div>
+
+                        <div class="block-item">
+                            <img src="../img/icons/discount.svg" alt="картинка">
+                            <p>Делаем скидки на крупные покупки</p>
+                        </div>
+                    </div>
+
+                    <div class="hero_right">
+                        <div class="hero_item">
+                            <p>Тип товара</p>
+                            <span>------------------------------------------</span>
+                            <p>Дрель-шуруповерт</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Бренд</p>
+                            <span>--------------------------------------------------</span>
+                            <p>MAKITA</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Назначение инструмента</p>
+                            <span>--------------------------</span>
+                            <p>профессиональный</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Мощность (Вт)</p>
+                            <span>------------------------------------------</span>
+                            <p>18</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Емкость АКБ (А/ч)</p>
+                            <span>------------------------------------------</span>
+                            <p>1,5</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Крутящий момент макс. (Н/м)</p>
+                            <span>------------------------------------------</span>
+                            <p>30</p>
+                        </div>
+
+                        <div class="hero_item">
+                            <p>Напряжение аккумулятора (В)</p>
+                            <span>------------------------------------------</span>
+                            <p>14,4</p>
+                        </div>
+
+                        <a href="#" class="hero_btn">
+                            Больше характеристик
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="info_top">
+                    <ul class="info_list">
+                        <li class="info_item"><a href="product-card.html" class="info_link">Характеристики</a></li>
+                        <li class="info_item"><a href="product-card-about.html" class="info_link first">О товаре</a>
+                        </li>
+                        <li class="info_item"><a href="product-card-delivery.html" class="info_link">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+
+                <h2 class="info_title">
+                    О товаре «Дрель-шуруповерт аккумуляторная MAKITA DF 347DWE14 В 1,5 А/ч»
+                </h2>
+
+                <p>Аккумуляторная дрель-шуруповерт <span>Makita DF347DWE </span>используется при сборке мебели,
+                    выполнении ремонтных и отделочных работ в зданиях и на улице. Двухскоростной редуктор упрощает
+                    ведение различных работ: первая скорость предназначена для заворачивания шурупов, вторая - для
+                    сверления. Литий-ионная технология увеличивает срок службы аппарата и позволяет заряжать аккумулятор
+                    вне зависимости от степени его разрядки. Модель работает с батареями серии G.</p>
+
+                <p>Дрель-шуруповерт аккумуляторная MAKITA DF 347DWE14 В 1,5 А/ч — в нашем интернет-магазине можно
+                    приобрести с дополнительной выгодой:</p>
+
+                <ul class="info_list-2">
+                    <li>оплата бонусами до 30% от стоимости товара для владельцев бонусных карт;</li>
+                    <li>следите за регулярными акциями и распродажами при покупке онлайн!</li>
+                </ul>
+
+                <p>Аккумуляторный шуруповерт Makita DF 347 DWE Отличный надежный инструмент для профессионального и
+                    бытового использования. Аккумуляторы Li-ion, от которых питается инструмент, обеспечивают полную
+                    автономную и длительную работу на одной зарядке.</p>
+                <p>Особенности модели: шуруповерт оснащен мощным двигателем с электронной регулировкой частоты вращения
+                    и прочным пылезащищенным редуктором с металлическими шестернями; высокий крутящий момент (30 Нм) с
+                    регулировкой величины 16 ступеней + D обеспечивает сверление с максимальным диаметром в дереве до 36
+                    мм, в стали – до 13 мм; для быстрой установки насадки используется БЗП патрон; электроинструмент
+                    имеет функцию реверса с удобной кнопкой переключения; двигатель шуруповерта снабжен тормозом; девайс
+                    работает от 14,4 В аккумулятора типа Li-ion, с полной зарядкой батареи 1,3 Ач в течение одного часа;
+                    электронная система защиты отключает аккумулятор при перегрузке;</p>
+                <p>Оформить заказ довольно просто — положите товар в корзину или позвоните по телефону 8 800 444 00 65
+                    и наши консультанты Вам помогут!</p>
+                <p>Обратите внимание! Изображение товара, представленного на фото, может незначительно отличаться от
+                    его фактического вида.</p>
+                <img src="../img/images/Product/about-product/Makita.png" alt="картинка">
+            </section>
+
+            <section class="similar">
+                <h2 class="title-medium">
+                    Похожие товары
+                </h2>
+
+                <div class="grid-5x1">
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Faris-G-120.png" alt="картинка товара" class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Смеситель Faris G-120 для раковины</h3>
+                        <div class="card-center">
+                            <h5>12 789 ₽</h5>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Spiral-100.png" alt="картинка товара" class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Триммерная леска «Спираль-100»</h3>
+                        <div class="card-center">
+                            <h4>312 ₽</h4>
+                            <h5>12 789 ₽</h5>
+                            <p>-10%</p>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Aragio-with-double-drain.png" alt="картинка товара"
+                            class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Триммерная леска «Спираль-100»</h3>
+                        <div class="card-center">
+                            <h4>15 999 ₽</h4>
+                            <h5>12 789 ₽</h5>
+                            <p>-12%</p>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Wander-x645-46-GF-1450W.png" alt="картинка товара"
+                            class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Перфоратор универсальный Wander X645-46 GF 1450W</h3>
+                        <div class="card-center">
+                            <h4>15 999 ₽</h4>
+                            <h5>12 789 ₽</h5>
+                            <p>-15%</p>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Faris-G-120.png" alt="картинка товара" class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Смеситель Faris G-120 для раковины</h3>
+                        <div class="card-center">
+                            <h5>12 789 ₽</h5>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <h2 class="title-medium">
+                    С этим товаром покупают
+                </h2>
+
+                <div class="grid-5x1">
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Aragio-with-double-drain.png" alt="картинка товара"
+                            class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Триммерная леска «Спираль-100»</h3>
+                        <div class="card-center">
+                            <h4>15 999 ₽</h4>
+                            <h5>12 789 ₽</h5>
+                            <p>-12%</p>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Wander-x645-46-GF-1450W.png" alt="картинка товара"
+                            class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Перфоратор универсальный Wander X645-46 GF 1450W</h3>
+                        <div class="card-center">
+                            <h4>15 999 ₽</h4>
+                            <h5>12 789 ₽</h5>
+                            <p>-15%</p>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Faris-G-120.png" alt="картинка товара" class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Смеситель Faris G-120 для раковины</h3>
+                        <div class="card-center">
+                            <h5>12 789 ₽</h5>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Spiral-100.png" alt="картинка товара" class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Триммерная леска «Спираль-100»</h3>
+                        <div class="card-center">
+                            <h4>312 ₽</h4>
+                            <h5>12 789 ₽</h5>
+                            <p>-10%</p>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../img/images/card-img/Aragio-with-double-drain.png" alt="картинка товара"
+                            class="card-img">
+                        <h2>Артикул: XJ89YHGO</h2>
+                        <h3>Триммерная леска «Спираль-100»</h3>
+                        <div class="card-center">
+                            <h4>15 999 ₽</h4>
+                            <h5>12 789 ₽</h5>
+                            <p>-12%</p>
+                        </div>
+
+                        <div class="card-bottom">
+                            <a href="../pages/making-an-order.html" class="button-buy">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                Купить
+                            </a>
+
+                            <div class="bottom-last">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <a href="#"><img src="../img/icons/logo.svg" alt="" /></a>
+                </div>
+
+                <p class="footer--hide">ООО «Стройоптторг»</p>
+
+                <p class="footer--hide">
+                    <span class="span-block">ИНН: 0901051787</span> КПП
+                    090101001
+                </p>
+
+                <p>
+                    <span class="span-block">Email</span>
+                    <a href="#" class="footer__top-email">
+                        info@stroiopttorg.ru
+                    </a>
+                </p>
+
+                <p>
+                    <span class="span-block footer__top--bold">
+                        8 800 444 00 65
+                    </span>
+
+                    Ежедневно, с 8:00 до 18:00
+                </p>
+
+                <a href="#" class="footer__top-btn">ЗАКАЗАТЬ ЗВОНОК</a>
+            </div>
+
+            <div class="footer__middle">
+                <div class="footer__middle-information">
+                    <h3 class="footer__middle-information-title">
+                        Информация
+                    </h3>
+                    <nav class="nav">
+                        <ul class="nav__ul">
+                            <li class="nav__li">
+                                <a href="#">О компании</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Возрат</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Возраты</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav__ul">
+                            <li class="nav__li">
+                                <a href="#">Вопрос-ответ </a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Новости</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Вход \ Регистрация</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Все акции</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__middle-catalog footer--hide-adaptive">
+                    <h3 class="footer__middle-catalog-title">Каталог</h3>
+                    <nav class="nav">
+                        <ul class="nav__ul">
+                            <li class="nav__li">
+                                <a href="#">Общестроительные материалы</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Все для сауны и бани</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Инструмент</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Отделочные материалы</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Товары для дома, сада и огорода</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav__ul footer--hide">
+                            <li class="nav__li">
+                                <a href="#">Электротовары </a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Сантехника</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#">Столярные изделия</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#"><span class="span-block">Спецодежда и средства</span>
+                                    индивидуальной пожарной защиты</a>
+                            </li>
+                        </ul>
+                        <ul class="nav__ul">
+                            <li class="nav__li">
+                                <a href="#"><span class="span-block">
+                                        Водо-газоснабжение,</span>
+                                    отопление, вентиляция</a>
+                            </li>
+                            <li class="nav__li">
+                                <a href="#"><span class="span-block">Метизные, такелажные и
+                                        скобяные</span>
+                                    изделия</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer--hide">
+                    <span class="span-block">Мы принимаем</span> к оплате:
+                </p>
+                <div class="banks">
+                    <a href="#"><img src="../img/icons/Visa.svg" alt="visa" /></a>
+                    <a href="#"><img src="../img/icons/mastercard.svg" alt="mastercard" /></a>
+                    <a href="#"><img src="../img/icons/sber-bank.svg" alt="sber-bank" /></a>
+                    <a href="#"><img src="../img/icons/Mir.svg" alt="Mir" /></a>
+                    <a href="#"><img src="../img/icons/Xalva.svg" alt="Xalva" /></a>
+                    <a href="#"><img src="../img/icons/Tinkoff.svg" alt="Tinkoff" /></a>
+                </div>
+                <form class="footer__bottom-form">
+                    <input type="text" placeholder="Ваш email" class="footer__bottom-input" />
+                    <button type="submit" class="footer__bottom-button">
+                        <img src="../img/icons/send.svg" alt="send" />
+                    </button>
+                </form>
+            </div>
+            <div class="footer__policy">
+                <p>© 2024 CodeCultis</p>
+                <p>Created by Dinur</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

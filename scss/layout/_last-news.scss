@@ -1,0 +1,9 @@
+@import "../scss-utils/variables",
+        "../scss-utils/mixin";
+
+.last-news {
+    &__title {
+        @include h2();
+        margin-bottom: $margin-regular;
+    }
+}
